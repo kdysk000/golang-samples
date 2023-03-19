@@ -2,15 +2,16 @@ package main
 
 import (
 	"encoding/json"
-	"github.com/gin-gonic/gin"
 	"io/ioutil"
 	"log"
 	"net/http"
+
+	"github.com/gin-gonic/gin"
 )
 
 type postBody struct {
-	Name string  `json:"name"`
-	Mail string  `json:"mail"`
+	Name string `json:"name"`
+	Mail string `json:"mail"`
 }
 
 type getUrl struct {
@@ -31,8 +32,8 @@ func main() {
 	}
 }
 
-//ヘッダー、ボディ、クエリ
-func funcPost (c *gin.Context) {
+// ヘッダー、ボディ、クエリ
+func funcPost(c *gin.Context) {
 	//リクエストヘッダー
 	ct := c.Request.Header.Get("Content-Type")
 
@@ -47,18 +48,18 @@ func funcPost (c *gin.Context) {
 	//レスポンス
 	c.JSON(http.StatusOK, gin.H{
 		"content-type": ct,
-		"id": id,
-		"name": param.Name,
-		"mail": param.Mail,
+		"id":           id,
+		"name":         param.Name,
+		"mail":         param.Mail,
 	})
 }
 
-//URLバインド
-func funcGet (c *gin.Context) {
+// URLバインド
+func funcGet(c *gin.Context) {
 	var param getUrl
 	c.ShouldBindUri(&param)
 	c.JSON(http.StatusOK, gin.H{
-		"id": param.ID,
+		"id":   param.ID,
 		"name": param.Name,
 	})
 
