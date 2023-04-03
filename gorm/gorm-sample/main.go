@@ -2,14 +2,22 @@ package main
 
 import (
 	"gorm-sample/controller"
+	"gorm-sample/model"
 	"gorm-sample/mysql"
 
 	"github.com/gin-gonic/gin"
 )
 
+var (
+	tables = []interface{}{
+		&model.User{},
+		&model.Task{},
+	}
+)
+
 func main() {
 	mysql.DbInit()
-	mysql.AutoMigrate()
+	mysql.AutoMigrate(tables...)
 
 	engine := gin.Default()
 	userEngine := engine.Group("/user")

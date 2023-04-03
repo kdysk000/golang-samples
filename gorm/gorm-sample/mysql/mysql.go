@@ -19,8 +19,8 @@ func DbInit() {
 	}
 }
 
-func AutoMigrate() {
-	db.AutoMigrate(&model.User{})
+func AutoMigrate(models ...interface{}) {
+	db.AutoMigrate(models...,)
 }
 
 func AddUser(user model.User) error {
@@ -29,6 +29,16 @@ func AddUser(user model.User) error {
 		Name:    user.Name,
 		Age:     user.Age,
 		Address: user.Address,
+		Tasks:   []model.Task{
+			{
+				TaskId: "task-0001",
+				Name:   "task1",
+			},
+			{
+				TaskId: "task-0002",
+				Name:   "task2",
+			},
+		},
 	}
 	ret := db.Create(&_user)
 	if ret.Error != nil {
