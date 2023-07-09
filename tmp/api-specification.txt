@@ -1,0 +1,132 @@
+導入課題
+　ユーザー情報をDBに対してCRUD(Create（登録）、Read（参照）、Update（更新）、Delete（削除）)するWebAPIを作成する
+
+　・DBはmysqlをdockerコンテナとして起動させる
+　
+　・Goのgin、gormを使って実装すること
+　
+　・登録するユーザー情報
+　　例:
+　　　- ユーザーID
+　　　- ユーザー名
+　　　- 年齢
+　　　- 電話番号
+　　　- メールアドレス
+　　　など
+　　　
+　・API仕様
+　　http://localhost:3000/user  ※ポート番号は任意
+　　
+　　- POST /add
+　　　　ユーザー情報の登録
+　　　　・パラメータ
+　　　　　　{
+　　　　　　　"userid": "0001",
+　　　　　　　"name": "hogehoge",
+　　　　　　　"age": 30,
+　　　　　　　"callNumber": "0123456789",
+　　　　　　　"mailAddress": "hogehoge@testgroup.jp"
+　　　　　　}
+　　　　・レスポンス
+　　　　　- 成功時
+　　　　　　　結果と登録した情報をJSON形式で返す
+　　　　　　　例：
+　　　　　　　{
+　　　　　　　　"result": "success",
+　　　　　　　　"user": {
+　　　　　　　　　　"userid": "0001",
+　　　　　　　　　　"name": "hogehoge",
+　　　　　　　　　　"age": 30,
+　　　　　　　　　　"callNumber": "0123456789",
+　　　　　　　　　　"mailAddress": "hogehoge@testgroup.jp"
+　　　　　　　　}
+　　　　　　　}
+　　　　　- 失敗時
+　　　　　　　結果とエラーメッセージをJSON形式で返す
+　　　　　　　ステータスコードはエラー要因によって適当なものを返すこと
+　　　　　　　例：
+　　　　　　　{
+　　　　　　　　"result": "failed",
+　　　　　　　　"errDetail": "xxxxxxxx"
+　　　　　　　}
+　　  
+　　- Get /list
+　　　　ユーザー情報の一覧取得
+　　　　・レスポンス
+　　　　　- 成功時
+　　　　　　　登録されている情報をJSON形式で返す
+　　　　　　　例：
+　　　　　　　{
+　　　　　　　　"result": "success",
+　　　　　　　　"users": [
+　　　　　　　　　　{
+　　　　　　　　　　　"userid": "0001",
+　　　　　　　　　　　"name": "hogehoge",
+　　　　　　　　　　　"age": 30,
+　　　　　　　　　　　"callNumber": "0123456789",
+　　　　　　　　　　　"mailAddress": "hogehoge@testgroup.jp"
+　　　　　　　　　　},
+　　　　　　　　　　{
+　　　　　　　　　　　"userid": "0002",
+　　　　　　　　　　　"name": "fugafuga",
+　　　　　　　　　　　"age": 20,
+　　　　　　　　　　　"callNumber": "1122334455",
+　　　　　　　　　　　"mailAddress": "fugafuga@testgroup.jp"
+　　　　　　　　　　}
+　　　　　　　　]
+　　　　　　　}
+　　　　　- 失敗時
+　　　　　　　結果とエラーメッセージをJSON形式で返す
+　　　　　　　ステータスコードはエラー要因によって適当なものを返すこと
+　　　　　　　例：
+　　　　　　　{
+　　　　　　　　"result": "failed",
+　　　　　　　　"errDetail": "xxxxxxxx"
+　　　　　　　}
+　　  
+　　- PUT /update
+　　　　ユーザー情報の更新
+　　　　・更新対象のユーザーはクエリパラメータでユーザーIDを指定する
+　　　　・更新する情報はHTTPのリクエストボディでJSON形式で渡す
+　　　　・レスポンス
+　　　　　- 成功時
+　　　　　　　結果と更新後の情報をJSON形式で返す
+　　　　　　　例：
+　　　　　　　{
+　　　　　　　　"result": "success",
+　　　　　　　　"user": {
+　　　　　　　　　　"userid": "0001",
+　　　　　　　　　　"name": "hogehoge",
+　　　　　　　　　　"age": 30,
+　　　　　　　　　　"callNumber": "0123456789",
+　　　　　　　　　　"mailAddress": "hogehoge@testgroup.jp"
+　　　　　　　　}
+　　　　　　　}
+　　　　　- 失敗時
+　　　　　　　結果とエラーメッセージをJSON形式で返す
+　　　　　　　ステータスコードはエラー要因によって適当なものを返すこと
+　　　　　　　例：
+　　　　　　　{
+　　　　　　　　"result": "failed",
+　　　　　　　　"errDetail": "xxxxxxxx"
+　　　　　　　}
+　　　　
+　　- DELETE /delete
+　　　　ユーザー情報の削除
+　　　　・削除対象のユーザーはクエリパラメータでユーザーIDを指定する
+　　　　・レスポンス
+　　　　　- 成功時
+　　　　　　　結果をJSON形式で返す
+　　　　　　　例：
+　　　　　　　{
+　　　　　　　　"result": "success",
+　　　　　　　}
+　　　　　- 失敗時
+　　　　　　　結果とエラーメッセージをJSON形式で返す
+　　　　　　　ステータスコードはエラー要因によって適当なものを返すこと
+　　　　　　　例：
+　　　　　　　{
+　　　　　　　　"result": "failed",
+　　　　　　　　"errDetail": "xxxxxxxx"
+　　　　　　　}
+
