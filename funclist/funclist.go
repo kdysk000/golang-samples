@@ -23,6 +23,10 @@ func GetFunc(name string) []func() {
 	stringsfunc := []func(){
 		mystrings.StringsSample001,
 		mystrings.StringsSample002,
+		mystrings.StringsSample003,
+		mystrings.StringsSample004,
+		mystrings.StringsSample005,
+		mystrings.StringsSample006,
 	}
 
 	switch name {
