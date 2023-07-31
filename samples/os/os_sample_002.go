@@ -7,12 +7,12 @@ import (
 )
 
 /* 
-    ディレクトの移動(Chdir)
+	ディレクトの移動(Chdir)
 	func Chdir(dir string) error
-	  param:
-	    dir  : 移動するディレクトリのパス
-	  return:
-		error: エラー
+		param:
+		  dir  : 移動するディレクトリのパス
+		return:
+		  error: エラー
 */
 func OsSample002() {
 	fmt.Println("os_sample_002")

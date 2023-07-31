@@ -8,7 +8,6 @@ import (
 	"go-samples/funclist"
 )
 
-
 func main() {
 	if len(os.Args) != 3 {
 		fmt.Printf("Invalid argument. (args count: %d)\n", len(os.Args))
@@ -17,7 +16,7 @@ func main() {
 
 	switch os.Args[1] {
 	case "os":
-		//fmt.Println("os")
+	case "strings":
 	default:
 		fmt.Printf("Invalid argument. (args[package]: %s)\n", os.Args[1])
 		os.Exit(1)

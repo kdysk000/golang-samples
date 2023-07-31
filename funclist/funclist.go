@@ -2,6 +2,7 @@ package funclist
 
 import (
 	myos "go-samples/samples/os"
+	mystrings "go-samples/samples/strings"
 )
 
 func GetFunc(name string) []func() {
@@ -19,12 +20,17 @@ func GetFunc(name string) []func() {
 		myos.OsSample011,
 		myos.OsSample012,
 	}
+	stringsfunc := []func(){
+		mystrings.StringsSample001,
+		mystrings.StringsSample002,
+	}
 
 	switch name {
 	case "os":
 		return osfunc
+	case "strings":
+		return stringsfunc
 	default:
 		return nil
 	}
 }
-

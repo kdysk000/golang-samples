@@ -9,24 +9,24 @@ import (
 /* 
     ファイルの書き込み(Write、WriteAt)
 	func (f *File) Write(b []byte) (n int, err error)
-	  概要:
-	    ファイルの先頭から書き込み
-	  param:
-	    b    : ファイルに書き込むデータを格納したbyte型のスライス
-	  return:
-	    n    : 書きこんだバイト数
-		error: エラー
+		概要:
+		  ファイルの先頭から書き込み
+		param:
+		  b    : ファイルに書き込むデータを格納したbyte型のスライス
+		return:
+		  n    : 書きこんだバイト数
+		  error: エラー
 
 	func (f *File) WriteAt(b []byte, off int64) (n int, err error)
-	  概要:
-	    指定した位置から書き込み
-		指定した位置がファイルサイズを超えている場合は、元のファイル内容の直後から書き込みが行われる
-	  param:
-	    b    : ファイルに書き込むデータを格納したbyte型のスライス
-		off  : 書き込みを開始するバイト位置(0が先頭)
-	  return:
-	    n    : 書きこんだバイト数
-		error: エラー
+		概要:
+		  指定した位置から書き込み
+		  指定した位置がファイルサイズを超えている場合は、元のファイル内容の直後から書き込みが行われる
+		param:
+		  b    : ファイルに書き込むデータを格納したbyte型のスライス
+		  off  : 書き込みを開始するバイト位置(0が先頭)
+		return:
+		  n    : 書きこんだバイト数
+		  error: エラー
 */
 func OsSample010() {
 	fmt.Println("os_sample_010")

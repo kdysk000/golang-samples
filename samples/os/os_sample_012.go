@@ -7,14 +7,14 @@ import (
 )
 
 /* 
-    ファイル、ディレクトリの削除(Remove)
+	ファイル、ディレクトリの削除(Remove)
 	func Remove(name string) error
-	  param:
-	    name   : ファイルパス
-	  return:
-		error　: エラー
-	  注：
-	    ディレクトリは空ディレクトリのみ削除可能
+		param:
+		  name : ファイルパス
+		return:
+		  error: エラー
+		注：
+		  ディレクトリは空ディレクトリのみ削除可能
 */
 func OsSample012() {
 	fmt.Println("os_sample_012")
