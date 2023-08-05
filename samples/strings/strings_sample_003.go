@@ -26,3 +26,15 @@ func StringsSample003() {
 	fmt.Println(strings.ContainsAny("hogehoge", "abc"))
 	fmt.Println(strings.ContainsAny("hogehoge", ""))
 }
+
+/*
+  実行結果
+  -------
+  true
+  true
+  false
+  true
+  false
+  false
+  -------
+*/

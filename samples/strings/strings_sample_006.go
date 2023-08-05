@@ -22,3 +22,13 @@ func StringsSample006() {
 	fmt.Println(strings.EqualFold("hogehoge", "HOGEHOGE"))
 	fmt.Println(strings.EqualFold("hogehoge", "HoGehOgE"))
 }
+
+/*
+  実行結果
+  -------
+  false
+  true
+  true
+  true
+  -------
+*/

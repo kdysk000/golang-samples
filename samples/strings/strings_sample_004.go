@@ -20,3 +20,11 @@ func StringsSample004() {
 	fmt.Println(strings.ContainsRune("hogehoge", 'h'))
 	fmt.Println(strings.ContainsRune("hogehoge", 'H'))
 }
+
+/*
+  実行結果
+  -------
+  true
+  false
+  -------
+*/

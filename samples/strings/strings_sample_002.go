@@ -12,7 +12,7 @@ import (
 		  s     : 検索対象の文字列
 		  substr: 検索する文字列
 		return:
-		  bool  : 
+		  bool  :
 		注：
 		  substrが空文字列ならtrueが返る
 */
@@ -25,3 +25,14 @@ func StringsSample002() {
 	fmt.Println(strings.Contains("hogehoge", ""))
 	fmt.Println(strings.Contains("", ""))
 }
+
+/*
+  実行結果
+  -------
+  true
+  true
+  false
+  true
+  true
+  -------
+*/

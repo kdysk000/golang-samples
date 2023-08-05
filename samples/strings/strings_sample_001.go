@@ -21,3 +21,12 @@ func StringsSample001() {
 	fmt.Println(strings.Compare("aaa", "bbb"))
 	fmt.Println(strings.Compare("bbb", "aaa"))
 }
+
+/*
+  実行結果
+  -------
+  0
+  -1
+  1
+  -------
+*/

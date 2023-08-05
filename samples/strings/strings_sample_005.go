@@ -26,3 +26,14 @@ func StringsSample005() {
 	fmt.Println(strings.Count("hogehoge", "fuga"))
 	fmt.Println(strings.Count("hogehoge", ""))
 }
+
+/*
+  実行結果
+  -------
+  2
+  2
+  0
+  0
+  9
+  -------
+*/
