@@ -44,6 +44,12 @@ func GetFunc(name string) []func() {
 		mystrings.StringsSample021,
 		mystrings.StringsSample022,
 		mystrings.StringsSample023,
+		mystrings.StringsSample024,
+		mystrings.StringsSample025,
+		mystrings.StringsSample026,
+		mystrings.StringsSample027,
+		mystrings.StringsSample028,
+		mystrings.StringsSample029,
 	}
 
 	switch name {
