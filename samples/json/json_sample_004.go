@@ -8,7 +8,7 @@ import (
 )
 
 /*
-	Goオブジェクト(構造体)をJSONファイルに出力する(NewDecoder、Decode)
+	JSONファイルをGoオブジェクト(構造体)に読み込む(NewDecoder、Decode)
 	func json.NewDecoder(r io.Reader) *json.Decoder
 		param:
 		  r            : 読み出すos.Fileオブジェクト
@@ -17,7 +17,7 @@ import (
 
 	func (*json.Decoder).Decode(v any) error
 		param:
-		  v     : 読みだしたデータを格納するオブジェクト(構造体)
+		  v     : 読み込んだデータを格納するオブジェクト(構造体)
 		return:
 		  error : エラー
 */
