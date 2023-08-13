@@ -15,6 +15,8 @@ func main() {
 	}
 
 	switch os.Args[1] {
+	case "filepath":
+	case "json":
 	case "os":
 	case "strings":
 	default:

@@ -1,11 +1,31 @@
 package funclist
 
 import (
+	myfilepath "go-samples/samples/filepath"
+	myjson "go-samples/samples/json"
 	myos "go-samples/samples/os"
 	mystrings "go-samples/samples/strings"
 )
 
 func GetFunc(name string) []func() {
+	filepathfunc := []func(){
+		myfilepath.FilepathSample001,
+		myfilepath.FilepathSample002,
+		myfilepath.FilepathSample003,
+		myfilepath.FilepathSample004,
+		myfilepath.FilepathSample005,
+		myfilepath.FilepathSample006,
+		myfilepath.FilepathSample007,
+		myfilepath.FilepathSample008,
+		myfilepath.FilepathSample009,
+		myfilepath.FilepathSample010,
+	}
+	jsonfunc := []func(){
+		myjson.JsonSample001,
+		myjson.JsonSample002,
+		myjson.JsonSample003,
+		myjson.JsonSample004,
+	}
 	osfunc := []func(){
 		myos.OsSample001,
 		myos.OsSample002,
@@ -53,6 +73,10 @@ func GetFunc(name string) []func() {
 	}
 
 	switch name {
+	case "filepath":
+		return filepathfunc
+	case "json":
+		return jsonfunc
 	case "os":
 		return osfunc
 	case "strings":
