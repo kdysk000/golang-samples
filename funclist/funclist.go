@@ -5,6 +5,7 @@ import (
 	myfilepath "go-samples/samples/filepath"
 	myjson "go-samples/samples/json"
 	myos "go-samples/samples/os"
+	mystrconv "go-samples/samples/strconv"
 	mystrings "go-samples/samples/strings"
 )
 
@@ -47,6 +48,14 @@ func GetFunc(name string) []func() {
 		myos.OsSample011,
 		myos.OsSample012,
 	}
+	strconvfunc := []func(){
+		mystrconv.StrconvSample001,
+		mystrconv.StrconvSample002,
+		mystrconv.StrconvSample003,
+		mystrconv.StrconvSample004,
+		mystrconv.StrconvSample005,
+		mystrconv.StrconvSample006,
+	}
 	stringsfunc := []func(){
 		mystrings.StringsSample001,
 		mystrings.StringsSample002,
@@ -88,6 +97,8 @@ func GetFunc(name string) []func() {
 		return jsonfunc
 	case "os":
 		return osfunc
+	case "strconv":
+		return strconvfunc
 	case "strings":
 		return stringsfunc
 	default:

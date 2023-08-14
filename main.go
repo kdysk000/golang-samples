@@ -19,6 +19,7 @@ func main() {
 	case "filepath":
 	case "json":
 	case "os":
+	case "strconv":
 	case "strings":
 	default:
 		fmt.Printf("Invalid argument. (args[package]: %s)\n", os.Args[1])
