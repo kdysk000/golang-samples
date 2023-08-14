@@ -6,8 +6,8 @@ import (
 	"os"
 )
 
-/* 
-    ファイルを開く(Create)
+/*
+    書き込み用にファイルを開く(Create)
 	func Create(name string) (*File, error)
 		param:
 		  name: ファイル名

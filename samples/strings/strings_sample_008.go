@@ -6,7 +6,7 @@ import (
 )
 
 /*
-	文字列を1 つ以上のfを満たすUnicodeコードポイントで分割した文字列のスライスを返す(FieldsFunc)
+	文字列を1つ以上のfを満たすUnicodeコードポイントで分割した文字列のスライスを返す(FieldsFunc)
 	FieldsFunc(s string, f func(rune) bool) []string
 		param:
 		  s       : 文字列

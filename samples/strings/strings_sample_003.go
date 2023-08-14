@@ -6,7 +6,7 @@ import (
 )
 
 /*
-	指定の文字列に含まれる Unicode コードポイントのいずれかが含まれているか(ContainsAny)
+	指定の文字列に含まれるUnicodeコードポイントのいずれかが含まれているか(ContainsAny)
 	func ContainsAny(s, chars string) bool
 		概要:
 		  例えば、charsが"ABC"なら'A'と'B'と'C'のいずれかが s に含まれるかを判定する

@@ -6,8 +6,8 @@ import (
 	"os"
 )
 
-/* 
-    ファイルの読み込み(WriteFile)
+/*
+    ファイルの書き込み(WriteFile)
 	func WriteFile(name string, data []byte, perm FileMode) error
 		param:
 		  name : ファイルパス

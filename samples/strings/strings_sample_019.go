@@ -6,7 +6,7 @@ import (
 )
 
 /*
-	文字列の置換(Replace)
+	一致する全ての文字列の置換(ReplaceAll)
 	ReplaceAll(s, old, new string) string
 		概要
 		  sの中でoldと一致する全ての文字列をnewに置換する

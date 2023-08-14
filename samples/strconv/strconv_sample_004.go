@@ -6,7 +6,7 @@ import (
 )
 
 /*
-	bool型を文字列に変換する(Itoa)
+	数値を文字列に変換する(Itoa)
 	func Itoa(i int) string
 		param:
 		  i     : int型
