@@ -7,6 +7,7 @@ import (
 	myos "go-samples/samples/os"
 	mystrconv "go-samples/samples/strconv"
 	mystrings "go-samples/samples/strings"
+	mytime "go-samples/samples/time"
 )
 
 func GetFunc(name string) []func() {
@@ -87,6 +88,23 @@ func GetFunc(name string) []func() {
 		mystrings.StringsSample028,
 		mystrings.StringsSample029,
 	}
+	timefunc := []func(){
+		mytime.TimeSample001,
+		mytime.TimeSample002,
+		mytime.TimeSample003,
+		mytime.TimeSample004,
+		mytime.TimeSample005,
+		mytime.TimeSample006,
+		mytime.TimeSample007,
+		mytime.TimeSample008,
+		mytime.TimeSample009,
+		mytime.TimeSample010,
+		mytime.TimeSample011,
+		mytime.TimeSample012,
+		mytime.TimeSample013,
+		mytime.TimeSample014,
+		mytime.TimeSample015,
+	}
 
 	switch name {
 	case "csv":
@@ -101,6 +119,8 @@ func GetFunc(name string) []func() {
 		return strconvfunc
 	case "strings":
 		return stringsfunc
+	case "time":
+		return timefunc
 	default:
 		return nil
 	}

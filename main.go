@@ -21,6 +21,7 @@ func main() {
 	case "os":
 	case "strconv":
 	case "strings":
+	case "time":
 	default:
 		fmt.Printf("Invalid argument. (args[package]: %s)\n", os.Args[1])
 		os.Exit(1)
