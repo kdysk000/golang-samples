@@ -26,6 +26,7 @@ func BasicSample008() {
 /*
   実行結果
   -------
-  [ABC DEF GHI]
+  map[apple:1 banana:3 orange:2]
+  map[apple:1 orange:2]
   -------
 */
