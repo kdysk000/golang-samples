@@ -1,6 +1,7 @@
 package funclist
 
 import (
+	mybasic "go-samples/samples/basic"
 	mycsv "go-samples/samples/csv"
 	myfilepath "go-samples/samples/filepath"
 	myjson "go-samples/samples/json"
@@ -11,6 +12,17 @@ import (
 )
 
 func GetFunc(name string) []func() {
+	basicfunc := []func(){
+		mybasic.BasicSample001,
+		mybasic.BasicSample002,
+		mybasic.BasicSample003,
+		mybasic.BasicSample004,
+		mybasic.BasicSample005,
+		mybasic.BasicSample006,
+		mybasic.BasicSample007,
+		mybasic.BasicSample008,
+		mybasic.BasicSample009,
+	}
 	csvfunc := []func(){
 		mycsv.CsvSample001,
 		mycsv.CsvSample002,
@@ -107,6 +119,8 @@ func GetFunc(name string) []func() {
 	}
 
 	switch name {
+	case "basic":
+		return basicfunc
 	case "csv":
 		return csvfunc
 	case "filepath":

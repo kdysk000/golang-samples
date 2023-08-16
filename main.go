@@ -15,6 +15,7 @@ func main() {
 	}
 
 	switch os.Args[1] {
+	case "basic":
 	case "csv":
 	case "filepath":
 	case "json":
