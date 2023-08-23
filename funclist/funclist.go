@@ -22,6 +22,11 @@ func GetFunc(name string) []func() {
 		mybasic.BasicSample007,
 		mybasic.BasicSample008,
 		mybasic.BasicSample009,
+		mybasic.BasicSample010,
+		mybasic.BasicSample011,
+		mybasic.BasicSample012,
+		mybasic.BasicSample013,
+		mybasic.BasicSample014,
 	}
 	csvfunc := []func(){
 		mycsv.CsvSample001,
