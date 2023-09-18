@@ -1,0 +1,21 @@
+以下のSQL文を使用することで、条件に該当しない場合にのみデータを挿入できます。
+
+INSERT INTO table_name (column1, column2, ...)
+SELECT value1, value2, ...
+WHERE NOT EXISTS (
+    SELECT * FROM table_name WHERE condition
+);
+
+上記のSQL文で、table_nameは挿入先のテーブル名、column1, column2, …は挿入する列名、v
+alue1, value2, …は挿入する値、conditionは重複をチェックするための条件です。
+このSQL文をGORMで実行する場合、以下のように書くことができます。
+
+db.Table("table_name").
+    Select("value1", "value2", ...).
+    Where("NOT EXISTS (?)", db.Table("table_name").Where(condition).Select("*").QueryExpr()).
+    Create(&data)
+
+ここで、dbはGORMのDBインスタンス、dataは挿入するデータです。
+上記のコードでは、db.Table("table_name")でテーブル名を指定し、.Select("value1", "value2", ...)で挿入する列名を指定しています。
+.Where("NOT EXISTS (?)", db.Table("table_name").Where(condition).Select("*").QueryExpr())で重複をチェックするための条件を指定しています。
+最後に.Create(&data)でデータを挿入しています。
