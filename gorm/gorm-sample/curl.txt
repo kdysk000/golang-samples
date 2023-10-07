@@ -1,0 +1,1 @@
+curl -X POST -H "Content-Type: application/json" -d '{"UserId":"0002", "Name":"fuga", "Age":30, "Address":"japan"}' localhost:3000/user/v1/add

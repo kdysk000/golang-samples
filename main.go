@@ -17,8 +17,10 @@ func main() {
 	switch os.Args[1] {
 	case "basic":
 	case "csv":
+	case "errors":
 	case "filepath":
 	case "json":
+	case "log":
 	case "os":
 	case "strconv":
 	case "strings":

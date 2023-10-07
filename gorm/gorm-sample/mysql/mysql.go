@@ -1,6 +1,7 @@
 package mysql
 
 import (
+	"fmt"
 	"gorm-sample/model"
 	"log"
 
@@ -49,10 +50,13 @@ func AddUser(user model.User) error {
 
 func GetUser() ([]model.User, error) {
 	users := []model.User{}
+	tasks := []model.Task{}
 	ret := db.Find(&users)
 	if ret.Error != nil {
 		log.Fatal(ret.Error)
 	}
+	ret = db.Where("owner_id = ?", 1).Find(&tasks)
+	fmt.Println(tasks)
 	return users, nil
 }
 

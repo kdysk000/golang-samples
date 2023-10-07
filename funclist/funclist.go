@@ -3,8 +3,10 @@ package funclist
 import (
 	mybasic "go-samples/samples/basic"
 	mycsv "go-samples/samples/csv"
+	myerrors "go-samples/samples/errors"
 	myfilepath "go-samples/samples/filepath"
 	myjson "go-samples/samples/json"
+	mylog "go-samples/samples/log"
 	myos "go-samples/samples/os"
 	mystrconv "go-samples/samples/strconv"
 	mystrings "go-samples/samples/strings"
@@ -34,6 +36,11 @@ func GetFunc(name string) []func() {
 		mycsv.CsvSample003,
 		mycsv.CsvSample004,
 	}
+	errorsfunc := []func(){
+		myerrors.ErrorsSample001,
+		myerrors.ErrorsSample002,
+		myerrors.ErrorsSample003,
+	}
 	filepathfunc := []func(){
 		myfilepath.FilepathSample001,
 		myfilepath.FilepathSample002,
@@ -51,6 +58,9 @@ func GetFunc(name string) []func() {
 		myjson.JsonSample002,
 		myjson.JsonSample003,
 		myjson.JsonSample004,
+	}
+	logfunc := []func(){
+		mylog.LogSample001,
 	}
 	osfunc := []func(){
 		myos.OsSample001,
@@ -128,10 +138,14 @@ func GetFunc(name string) []func() {
 		return basicfunc
 	case "csv":
 		return csvfunc
+	case "errors":
+		return errorsfunc
 	case "filepath":
 		return filepathfunc
 	case "json":
 		return jsonfunc
+	case "log":
+		return logfunc
 	case "os":
 		return osfunc
 	case "strconv":
