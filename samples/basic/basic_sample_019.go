@@ -18,9 +18,9 @@ func BasicSample019() {
 }
 
 func add(x int, y ... int) int {
-    for _, num := range y {
+	for _, num := range y {
 		x += num
-    }
+	}
 	return x
 }
 

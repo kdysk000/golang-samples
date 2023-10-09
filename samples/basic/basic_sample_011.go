@@ -13,7 +13,7 @@ import (
 		}
 
 	注：
-		簡易付きif文の簡易文に設定している変数は、簡易文付きif文の中だけで使用可能
+	  簡易付きif文の簡易文に設定している変数は、簡易文付きif文の中だけで使用可能
 */
 func BasicSample011() {
 	fmt.Println("basic_sample_011")

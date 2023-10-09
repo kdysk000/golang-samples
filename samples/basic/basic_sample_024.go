@@ -15,7 +15,7 @@ func BasicSample024() {
 }
 
 func testFunc2(f func(int) int) int {
-    fmt.Println("This is testFunc2")
+	fmt.Println("This is testFunc2")
 	return f(5)
 }
 

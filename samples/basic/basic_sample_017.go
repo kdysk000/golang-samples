@@ -10,7 +10,8 @@ import (
 	書式：
 	    func 関数名 (引数 型) 型 {
             // do something
-        return 値
+        	return 値
+		}
 
 	Public関数とPrivate関数
 	  Public関数：関数名が大文字で始まる。他のパッケージから当該関数をコールすることが可能

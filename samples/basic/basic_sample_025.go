@@ -19,7 +19,7 @@ func testFunc3() func(int) int {
 
 	f := func(x int) int {
 		return x
-    }
+	}
 	return f
 }
 
