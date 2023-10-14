@@ -1,7 +1,14 @@
 package funclist
 
 import (
-	mybasic "go-samples/samples/basic"
+	myarray "go-samples/samples/basic/array"
+	myfor "go-samples/samples/basic/for"
+	myfunc "go-samples/samples/basic/func"
+	myif "go-samples/samples/basic/if"
+	mymap "go-samples/samples/basic/map"
+	myslice "go-samples/samples/basic/slice"
+	mystruct "go-samples/samples/basic/struct"
+	myswitch "go-samples/samples/basic/switch"
 	mycsv "go-samples/samples/csv"
 	myerrors "go-samples/samples/errors"
 	myfilepath "go-samples/samples/filepath"
@@ -14,37 +21,9 @@ import (
 )
 
 func GetFunc(name string) []func() {
-	basicfunc := []func(){
-		mybasic.BasicSample001,
-		mybasic.BasicSample002,
-		mybasic.BasicSample003,
-		mybasic.BasicSample004,
-		mybasic.BasicSample005,
-		mybasic.BasicSample006,
-		mybasic.BasicSample007,
-		mybasic.BasicSample008,
-		mybasic.BasicSample009,
-		mybasic.BasicSample010,
-		mybasic.BasicSample011,
-		mybasic.BasicSample012,
-		mybasic.BasicSample013,
-		mybasic.BasicSample014,
-		mybasic.BasicSample015,
-		mybasic.BasicSample016,
-		mybasic.BasicSample017,
-		mybasic.BasicSample018,
-		mybasic.BasicSample019,
-		mybasic.BasicSample020,
-		mybasic.BasicSample021,
-		mybasic.BasicSample022,
-		mybasic.BasicSample023,
-		mybasic.BasicSample024,
-		mybasic.BasicSample025,
-		mybasic.BasicSample026,
-		mybasic.BasicSample027,
-		mybasic.BasicSample028,
-		mybasic.BasicSample029,
-		mybasic.BasicSample030,
+	arrayfunc := []func(){
+		myarray.ArraySample001,
+		myarray.ArraySample002,
 	}
 	csvfunc := []func(){
 		mycsv.CsvSample001,
@@ -69,6 +48,26 @@ func GetFunc(name string) []func() {
 		myfilepath.FilepathSample009,
 		myfilepath.FilepathSample010,
 	}
+	forfunc := []func(){
+		myfor.ForSample001,
+		myfor.ForSample002,
+		myfor.ForSample003,
+	}
+	funcfunc := []func(){
+		myfunc.FuncSample001,
+		myfunc.FuncSample002,
+		myfunc.FuncSample003,
+		myfunc.FuncSample004,
+		myfunc.FuncSample005,
+		myfunc.FuncSample006,
+		myfunc.FuncSample007,
+		myfunc.FuncSample008,
+		myfunc.FuncSample009,
+	}
+	iffunc := []func(){
+		myif.IfSample001,
+		myif.IfSample002,
+	}
 	jsonfunc := []func(){
 		myjson.JsonSample001,
 		myjson.JsonSample002,
@@ -77,6 +76,12 @@ func GetFunc(name string) []func() {
 	}
 	logfunc := []func(){
 		mylog.LogSample001,
+	}
+	mapfunc := []func(){
+		mymap.MapSample001,
+		mymap.MapSample002,
+		mymap.MapSample003,
+		mymap.MapSample004,
 	}
 	osfunc := []func(){
 		myos.OsSample001,
@@ -91,6 +96,11 @@ func GetFunc(name string) []func() {
 		myos.OsSample010,
 		myos.OsSample011,
 		myos.OsSample012,
+	}
+	slicefunc := []func(){
+		myslice.SliceSample001,
+		myslice.SliceSample002,
+		myslice.SliceSample003,
 	}
 	strconvfunc := []func(){
 		mystrconv.StrconvSample001,
@@ -131,6 +141,17 @@ func GetFunc(name string) []func() {
 		mystrings.StringsSample028,
 		mystrings.StringsSample029,
 	}
+	structfunc := []func(){
+		mystruct.StructSample001,
+		mystruct.StructSample002,
+		mystruct.StructSample003,
+		mystruct.StructSample004,
+		mystruct.StructSample005,
+	}
+	switchfunc := []func(){
+		myswitch.SwitchSample001,
+		myswitch.SwitchSample002,
+	}
 	timefunc := []func(){
 		mytime.TimeSample001,
 		mytime.TimeSample002,
@@ -150,24 +171,38 @@ func GetFunc(name string) []func() {
 	}
 
 	switch name {
-	case "basic":
-		return basicfunc
+	case "array":
+		return arrayfunc
 	case "csv":
 		return csvfunc
 	case "errors":
 		return errorsfunc
 	case "filepath":
 		return filepathfunc
+	case "for":
+		return forfunc
+	case "func":
+		return funcfunc
+	case "if":
+		return iffunc
 	case "json":
 		return jsonfunc
 	case "log":
 		return logfunc
+	case "map":
+		return mapfunc
 	case "os":
 		return osfunc
+	case "slice":
+		return slicefunc
 	case "strconv":
 		return strconvfunc
 	case "strings":
 		return stringsfunc
+	case "struct":
+		return structfunc
+	case "switch":
+		return switchfunc
 	case "time":
 		return timefunc
 	default:

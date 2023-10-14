@@ -15,15 +15,23 @@ func main() {
 	}
 
 	switch os.Args[1] {
+	case "array":
 	case "basic":
 	case "csv":
 	case "errors":
 	case "filepath":
+	case "for":
+	case "func":
+	case "if":
 	case "json":
 	case "log":
+	case "map":
 	case "os":
+	case "slice":
 	case "strconv":
 	case "strings":
+	case "struct":
+	case "switch":
 	case "time":
 	default:
 		fmt.Printf("Invalid argument. (args[package]: %s)\n", os.Args[1])
@@ -32,13 +40,13 @@ func main() {
 
 	no, err := strconv.Atoi(os.Args[2])
 	if err != nil {
-		fmt.Printf("Invalid argument. (args[test no]: %s)\n", os.Args[2])
+		fmt.Printf("Invalid argument. (args[test number]: %s)\n", os.Args[2])
 		os.Exit(1)
 	}
 
 	fl := funclist.GetFunc(os.Args[1])
 	if no > len(fl) {
-		fmt.Printf("Invalid argument. (Max test no is %d)\n", len(fl))
+		fmt.Printf("Invalid argument. (Max test number is %d)\n", len(fl))
 		os.Exit(1)
 	}
 
