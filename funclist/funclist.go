@@ -25,6 +25,10 @@ func GetFunc(name string) []func() {
 	arrayfunc := []func(){
 		myarray.ArraySample001,
 		myarray.ArraySample002,
+		myarray.ArraySample003,
+		myarray.ArraySample004,
+		myarray.ArraySample005,
+		myarray.ArraySample006,
 	}
 	csvfunc := []func(){
 		mycsv.CsvSample001,
@@ -103,6 +107,11 @@ func GetFunc(name string) []func() {
 		myslice.SliceSample002,
 		myslice.SliceSample003,
 		myslice.SliceSample004,
+		myslice.SliceSample005,
+		myslice.SliceSample006,
+		myslice.SliceSample007,
+		myslice.SliceSample008,
+		myslice.SliceSample009,
 	}
 	slicesfunc := []func(){
 		myslices.SlicesSample001,
