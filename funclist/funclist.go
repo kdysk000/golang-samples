@@ -15,6 +15,7 @@ import (
 	myjson "go-samples/samples/json"
 	mylog "go-samples/samples/log"
 	myos "go-samples/samples/os"
+	myslices "go-samples/samples/slices"
 	mystrconv "go-samples/samples/strconv"
 	mystrings "go-samples/samples/strings"
 	mytime "go-samples/samples/time"
@@ -101,6 +102,25 @@ func GetFunc(name string) []func() {
 		myslice.SliceSample001,
 		myslice.SliceSample002,
 		myslice.SliceSample003,
+		myslice.SliceSample004,
+	}
+	slicesfunc := []func(){
+		myslices.SlicesSample001,
+		myslices.SlicesSample002,
+		myslices.SlicesSample003,
+		myslices.SlicesSample004,
+		myslices.SlicesSample005,
+		myslices.SlicesSample006,
+		myslices.SlicesSample007,
+		myslices.SlicesSample008,
+		myslices.SlicesSample009,
+		myslices.SlicesSample010,
+		myslices.SlicesSample011,
+		myslices.SlicesSample012,
+		myslices.SlicesSample013,
+		myslices.SlicesSample014,
+		myslices.SlicesSample015,
+		myslices.SlicesSample016,
 	}
 	strconvfunc := []func(){
 		mystrconv.StrconvSample001,
@@ -195,6 +215,8 @@ func GetFunc(name string) []func() {
 		return osfunc
 	case "slice":
 		return slicefunc
+	case "slices":
+		return slicesfunc
 	case "strconv":
 		return strconvfunc
 	case "strings":

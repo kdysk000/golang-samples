@@ -28,6 +28,7 @@ func main() {
 	case "map":
 	case "os":
 	case "slice":
+	case "slices":
 	case "strconv":
 	case "strings":
 	case "struct":
