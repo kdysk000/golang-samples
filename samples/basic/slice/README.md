@@ -5,5 +5,7 @@
 5. [スライスの要素数を取得(len)](./slice_sample_005.go)
 6. [スライス特定の要素を取り出す](./slice_sample_006.go)
 7. [スライスの一部を部分スライスとして取り出す](./slice_sample_007.go)
+8. [スライスを空にする](./slice_sample_008.go)
+9. [スライスを結合する(append)](./slice_sample_009.go)
 
 スライス操作する別パッケージがあるのでそちらも参照 ([slices](../../slices))
