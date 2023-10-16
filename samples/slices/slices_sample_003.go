@@ -18,14 +18,14 @@ import (
 func SlicesSample003() {
 	fmt.Println("slices_sample_003")
 
-	x := make([]int, 0, 10)
-	fmt.Printf("cap: %d, len: %d\n", cap(x), len(x))
+	s := make([]int, 0, 10)
+	fmt.Printf("cap: %d, len: %d\n", cap(s), len(s))
 	
-	x = append(x, 1)
-	fmt.Printf("cap: %d, len: %d\n", cap(x), len(x))
+	s = append(s, 1)
+	fmt.Printf("cap: %d, len: %d\n", cap(s), len(s))
 	
-	x = slices.Clip(x)
-	fmt.Printf("cap: %d, len: %d\n", cap(x), len(x))
+	s = slices.Clip(s)
+	fmt.Printf("cap: %d, len: %d\n", cap(s), len(s))
 }
 
 /*

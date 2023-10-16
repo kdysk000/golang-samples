@@ -18,11 +18,11 @@ import (
 func SlicesSample004() {
 	fmt.Println("slices_sample_004")
 
-	x := []int{1, 2, 3, 4, 5}
-	y := slices.Clone(x)
-	x = append(x, 6)
-	fmt.Println(x)
-	fmt.Println(y)
+	s1 := []int{1, 2, 3, 4, 5}
+	s2 := slices.Clone(s1)
+	s1 = append(s1, 6)
+	fmt.Println(s1)
+	fmt.Println(s2)
 }
 
 /*
