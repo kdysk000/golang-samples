@@ -10,10 +10,10 @@ import (
 	スライスがソート済みか判定する(IsSorted)
 
 	func IsSorted(x []E) bool
-		param:
-		  x: スライス
-		return:
-		  bool: 判定結果
+	  param:
+	    x: スライス
+	  return:
+	    bool: 判定結果
 */
 func SlicesSample014() {
 	fmt.Println("slices_sample_014")

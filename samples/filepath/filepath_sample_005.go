@@ -8,10 +8,10 @@ import (
 /*
 	パス名から拡張子を取得する(Ext)
 	func Ext(path string) string
-		param:
-		  path パス
-		return:
-		  string: 取得した拡張子
+	  param:
+	    path  : パス
+	  return:
+	    string: 取得した拡張子
 	注：
 	  拡張子がなければ空文字列が返る
 */

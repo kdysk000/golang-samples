@@ -10,10 +10,10 @@ import (
 	複数の値を返却することもできる。複数の場合は型名は (...) で囲む
 
 	書式：
-	    func 関数名 (引数 型) (型, 型) {
-			// do something
-			return 値
-		}
+	  func 関数名 (引数 型) (型, 型) {
+	    // do something
+		return 値
+	  }
 */
 func FuncSample002() {
 	fmt.Println("func_sample_002")

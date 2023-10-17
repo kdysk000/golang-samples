@@ -10,11 +10,11 @@ import (
 /*
 	CSV形式のファイルを一括で読み出す(ReadAll)
 	func (r *csv.Reader) ReadAll() (records [][]string, err error)
-		param:
-		  なし
-		return:
-		  records: CSVから読みだした全レコードデータ
-		  err    : エラー
+	  param:
+	    なし
+	  return:
+	    records: CSVから読みだした全レコードデータ
+	    err    : エラー
 */
 func CsvSample003() {
 	fmt.Println("csv_sample_003")

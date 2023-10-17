@@ -8,10 +8,10 @@ import (
 /*
 	パスが絶対パスかどうかを判定する(IsAbs)
 	func IsAbs(path string) bool
-		param:
-		  path パス
-		return:
-		  bool: 絶対パスならtrue、相対パスならfalse
+	  param:
+	    path: パス
+	  return:
+	    bool: 絶対パスならtrue、相対パスならfalse
 */
 func FilepathSample007() {
 	fmt.Println("filepath_sample_007")

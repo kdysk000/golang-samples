@@ -9,11 +9,11 @@ import (
 /*
 	カレントディレクトのパスを取得(Getwd)
 	func Getwd() (dir string, err error)
-		param:
-		  なし
-		return:
-		  dir  : ディレクトリパス
-		  error: エラー
+	  param:
+	    なし
+	  return:
+	    dir  : ディレクトリパス
+	    error: エラー
 */
 func OsSample001() {
 	fmt.Println("os_sample_001")

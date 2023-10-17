@@ -9,11 +9,11 @@ import (
 /*
 	JSON形式の文字列データ([]byte)をGoのオブジェクトに変換する(Unmarshal)
 	func Unmarshal(data []byte, v any) error
-		param:
-		  []byte: JSON文字列データ
-		  v     : 変換結果を格納するオブジェクト
-		return:
-		  error : エラー
+	  param:
+	    []byte: JSON文字列データ
+	    v     : 変換結果を格納するオブジェクト
+	  return:
+	    error : エラー
 */
 func JsonSample002() {
 	fmt.Println("json_sample_002")

@@ -12,11 +12,11 @@ import (
 	第一引数にラップしたエラーを指定すると、順番にアンラップして確認する
 
 	func Is(err error, target error) bool
-		param:
-		  err   : エラー
-		  target:
-		return:
-		  bool
+	  param:
+	    err   : エラー
+	    target:
+	  return:
+	    bool
 */
 func ErrorsSample003() {
 	fmt.Println("errors_sample_003")

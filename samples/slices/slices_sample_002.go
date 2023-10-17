@@ -10,13 +10,13 @@ import (
 	スライス要素の検索(BinarySearchFunc)
 
 	func BinarySearchFunc(x []E, target T, cmp func(E, T) int) (int, bool)
-		param:
-		  x     : 検索対象のスライス
-		  target: 検索する要素
-		  cmp   : 比較関数
-		return:
-		  int : ターゲットの位置
-		  bool: みつかったかどうか
+	  param:
+	    x     : 検索対象のスライス
+	    target: 検索する要素
+	    cmp   : 比較関数
+	  return:
+	    int   : ターゲットの位置
+	    bool  : みつかったかどうか
 
 	BinarySearchの比較部分を指定できる
 

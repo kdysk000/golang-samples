@@ -10,11 +10,11 @@ import (
 	一致するスライスの要素のIndexを返す(Index)
 
 	func Index(s []E, v E) int
-		param:
-		  s: スライス
-		  v: 検索する要素
-		return:
-		  int: Index(見つかった：Index番号、みつからなかった：-1)
+	  param:
+	    s: スライス
+	    v: 検索する要素
+	  return:
+	    int: Index(見つかった：Index番号、みつからなかった：-1)
 */
 func SlicesSample012() {
 	fmt.Println("slices_sample_012")

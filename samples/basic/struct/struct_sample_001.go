@@ -8,10 +8,10 @@ import (
 	構造体の定義
 
 	書式
-		type 構造体名 struct {
-			x int
-			y int
-		}
+	  type 構造体名 struct {
+	  	x int
+	  	y int
+	  }
 */
 type testStruct1 struct {
 	x int

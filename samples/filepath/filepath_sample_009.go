@@ -8,11 +8,11 @@ import (
 /*
 	パスをディレクトリ名とファイル名に分割する(Split)
 	func Split(path string) (dir, file string)
-		param:
-		  path: パス
-		return:
-		  dir : ディレクトリ名
-		  file: ファイル名
+	  param:
+	    path: パス
+	  return:
+	    dir : ディレクトリ名
+	    file: ファイル名
 */
 func FilepathSample009() {
 	fmt.Println("filepath_sample_009")

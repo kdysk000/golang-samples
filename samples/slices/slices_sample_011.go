@@ -10,11 +10,11 @@ import (
 	スライスのCapacityを増やす(Grow)
 
 	func Grow(s S, n int) S
-		param:
-		  s: スライス
-		  n: 増やした後のCapacity数
-		return:
-		  S: 新しいスライス
+	  param:
+	    s: スライス
+	    n: 増やした後のCapacity数
+	  return:
+	    S: 新しいスライス
 */
 func SlicesSample011() {
 	fmt.Println("slices_sample_011")

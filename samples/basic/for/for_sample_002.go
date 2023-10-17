@@ -10,11 +10,11 @@ import (
 	Go言語にはwhile文がないが、while文に似た書き方でfor文を書くことができる
 
 	書式：
-		初期値
-		for 条件 {
-			// 繰り返し処理する内容
-			// 増減
-		}
+	  初期値
+	  for 条件 {
+	  	// 繰り返し処理する内容
+	  	// 増減
+	  }
 */
 func ForSample002() {
 	fmt.Println("for_sample_002")

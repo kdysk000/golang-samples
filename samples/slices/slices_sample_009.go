@@ -10,12 +10,12 @@ import (
 	スライスの要素を削除する(Compact)
 
 	func Delete(s S, i, j int) S
-		param:
-		  s: スライス
-		  i: 削除する要素の先頭index
-		  j: 削除する要素の終端index
-		return:
-		  S: 削除後の新しいスライス
+	  param:
+	    s: スライス
+	    i: 削除する要素の先頭index
+	    j: 削除する要素の終端index
+	  return:
+	    S: 削除後の新しいスライス
 
 	注：引数に渡す元のスライスに影響する
 */

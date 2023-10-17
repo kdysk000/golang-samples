@@ -9,11 +9,11 @@ import (
 /*
 	Goオブジェクト(構造体)をJSON形式の文字列データに変換(Marshal)
 	func Marshal(v any) ([]byte, error)
-		param:
-		  v     : 変換するオブジェクト
-		return:
-		  []byte: JSON文字列データ
-		  error : エラー
+	  param:
+	    v     : 変換するオブジェクト
+	  return:
+	    []byte: JSON文字列データ
+	    error : エラー
 */
 func JsonSample001() {
 	fmt.Println("json_sample_001")

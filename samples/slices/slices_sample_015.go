@@ -10,13 +10,13 @@ import (
 	スライスの要素を置換する(Replace)
 
 	func Replace(s S, i, j int, v …E) S
-		param:
-		  s: スライス
-		  i: 置換する要素の先頭index
-		  j: 置換する要素の終端index
-		  v: 要素
-		return:
-		  S: 置換後のスライス
+	  param:
+	    s: スライス
+	    i: 置換する要素の先頭index
+	    j: 置換する要素の終端index
+	    v: 要素
+	  return:
+	    S: 置換後のスライス
 
 	※いまいち仕様がわからないので使えないかも・・・
 */

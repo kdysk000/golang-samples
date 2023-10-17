@@ -8,10 +8,10 @@ import (
 /*
 	パス名の最後の要素を除いたものを返す(Dir)
 	func Dir(path string) string
-		param:
-		  path パス
-		return:
-		  string: パスの最後の要素を除いたパス
+	  param:
+	    path  : パス
+	  return:
+	    string: パスの最後の要素を除いたパス
 	注：
 	  与えたパスが"/"だけの場合は"/"を返す
 	  パスが空の場合は"."を返す

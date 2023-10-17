@@ -10,13 +10,13 @@ import (
 /*
 	指定したパス以下のディレクトリを再帰的に探索する(Walk)
 	func Walk(root string, fn WalkFunc) error
-		概要:
-		  第二引数にWalkFuncを指定するとファイルやディレクトリが見つかるたびにWalkFuncが実行される
-		param:
-		  root : 探索するディレクトリ
-		  fn   : ファイルやディレクトリが見つかった際に実行する関数
-		return:
-		  error: 連結後のパス
+	  概要:
+	    第二引数にWalkFuncを指定するとファイルやディレクトリが見つかるたびにWalkFuncが実行される
+	  param:
+	    root : 探索するディレクトリ
+	    fn   : ファイルやディレクトリが見つかった際に実行する関数
+	  return:
+	    error: 連結後のパス
 */
 func FilepathSample010() {
 	fmt.Println("filepath_sample_010")

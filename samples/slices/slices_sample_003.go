@@ -10,10 +10,10 @@ import (
 	スライスの空いているCapacity を削除する(Clip)
 
 	func Clip(s S) S
-		param:
-		  s: スライス
-		return:
-		  S: 処理後のスライス
+	  param:
+	    s: スライス
+	  return:
+	    S: 処理後のスライス
 */
 func SlicesSample003() {
 	fmt.Println("slices_sample_003")

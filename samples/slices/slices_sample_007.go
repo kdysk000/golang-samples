@@ -10,11 +10,11 @@ import (
 	スライスの比較(Compare)
 
 	func Compare(s1, s2 []E) int
-		param:
-		  s1: スライス
-		  s2: スライス
-		return:
-		  int: 比較結果(0：同じ、1：s1>s2、-1：s1<s2)
+	  param:
+	    s1: スライス
+	    s2: スライス
+	  return:
+	    int: 比較結果(0：同じ、1：s1>s2、-1：s1<s2)
 */
 func SlicesSample007() {
 	fmt.Println("slices_sample_007")

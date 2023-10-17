@@ -12,10 +12,10 @@ import (
 	※ エラーはfmt.Errorf()に”%w”フォーマットを適用する事によってラッピングできる
 
 	func Unwrap(err error) error
-		param:
-		  err   : Wrapされたエラー
-		return:
-		  Wrap前のエラー
+	  param:
+	    err: Wrapされたエラー
+	  return:
+	    Wrap前のエラー
 */
 func ErrorsSample002() {
 	fmt.Println("errors_sample_002")

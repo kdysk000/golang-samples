@@ -10,8 +10,8 @@ import (
 	スライスをソートする(Sort)
 
 	func Sort(x []E)
-		param:
-		  x: スライス
+	  param:
+	    x: スライス
 */
 func SlicesSample016() {
 	fmt.Println("slices_sample_016")

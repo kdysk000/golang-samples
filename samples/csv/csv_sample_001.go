@@ -11,17 +11,17 @@ import (
 /*
 	CSV形式のファイルを読み出す(NewReader、Read)
 	func NewReader(r io.Reader) *csv.Reader
-		param:
-		  r     : ioリーダ(ファイルを読みだす場合はos.Fileを渡す)
-		return:
-		  *csv.Reader: csvリーダ
+	  param:
+	    r          : ioリーダ(ファイルを読みだす場合はos.Fileを渡す)
+	  return:
+	    *csv.Reader: csvリーダ
 
 	func (r *csv.Reader) Read() (record []string, err error)
-		param:
-		  なし
-		return:
-		  record: CSVから読みだした1レコード分のデータ
-		  err   : エラー
+	  param:
+	    なし
+	  return:
+	    record: CSVから読みだした1レコード分のデータ
+	    err   : エラー
 */
 func CsvSample001() {
 	fmt.Println("csv_sample_001")

@@ -10,10 +10,10 @@ import (
 	スライスのコピー(Clone)
 
 	func Clone(s S) S
-		param:
-		  s: スライス
-		return:
-		  S: コピーしたスライス
+	  param:
+	    s: スライス
+	  return:
+	    S: コピーしたスライス
 */
 func SlicesSample004() {
 	fmt.Println("slices_sample_004")

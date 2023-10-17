@@ -6,14 +6,15 @@ import (
 	"os"
 )
 
-/* 
+/*
     ファイルの読み込み(ReadFile)
+
 	func ReadFile(name string) ([]byte, error)
-		param:
-		  name   : ファイルパス
-		return:
-		  []byte : ファイルから読み込んだデータを格納するbyte型のスライス
-		  error　: エラー
+	  param:
+	    name   : ファイルパス
+	  return:
+	    []byte : ファイルから読み込んだデータを格納するbyte型のスライス
+	    error　: エラー
 */
 func OsSample009() {
 	fmt.Println("os_sample_009")

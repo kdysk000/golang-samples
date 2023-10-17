@@ -10,12 +10,12 @@ import (
 	スライス要素の検索(BinarySearch)
 
 	func BinarySearch(x []E, target E) (int, bool)
-		param:
-		  x     : 検索対象のスライス
-		  target: 検索する要素
-		return:
-		  int : ターゲットの位置
-		  bool: みつかったかどうか
+	  param:
+	    x     : 検索対象のスライス
+	    target: 検索する要素
+	  return:
+	    int   : ターゲットの位置
+	    bool  : みつかったかどうか
 
 	スライスのターゲットの位置と見つかったかを返す
 

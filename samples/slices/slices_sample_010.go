@@ -10,11 +10,11 @@ import (
 	２つのスライスが等しいか比較(Equal)
 
 	func Equal(s1, s2 []E) bool
-		param:
-		  s1: スライス
-		  s2: スライス
-		return:
-		  bool: 等しいかどうか
+	  param:
+	    s1: スライス
+	    s2: スライス
+	  return:
+	    bool: 等しいかどうか
 */
 func SlicesSample010() {
 	fmt.Println("slices_sample_010")

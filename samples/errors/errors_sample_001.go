@@ -8,10 +8,10 @@ import (
 /*
 	エラーの定義(New)
 	func New(text string) error
-		param:
-		  text: エラー文字列
-		return:
-		  error
+	  param:
+	    text: エラー文字列
+	  return:
+	    error
 */
 func ErrorsSample001() {
 	fmt.Println("errors_sample_001")

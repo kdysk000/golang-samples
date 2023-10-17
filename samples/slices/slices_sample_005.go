@@ -10,10 +10,10 @@ import (
 	スライスの連続した同じ要素を削除し新しいスライスを返す(Compact)
 
 	func Compact(s S) S
-		param:
-		  s: スライス
-		return:
-		  S: 削除後の新しいスライス
+	  param:
+	    s: スライス
+	  return:
+	    S: 削除後の新しいスライス
 
 	注：引数に渡す元のスライスに影響する
 */

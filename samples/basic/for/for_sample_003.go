@@ -10,9 +10,9 @@ import (
 	配列の値を順番に取得する場合などに使用
 
 	書式：
-		for index, value := range 配列など {
-			// 繰り返し処理する内容
-		}
+	  for index, value := range 配列など {
+	  	// 繰り返し処理する内容
+	  }
 */
 func ForSample003() {
 	fmt.Println("for_sample_003")

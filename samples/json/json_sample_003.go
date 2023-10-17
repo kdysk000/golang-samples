@@ -10,16 +10,16 @@ import (
 /*
 	Goオブジェクト(構造体)をJSONファイルに出力する(NewEncoder、Encode)
 	func json.NewEncoder(w io.Writer) *json.Encoder
-		param:
-		  w            : ファイルに書き出すos.Fileオブジェクト
-		return:
-		  *json.Encoder: JSONエンコーダ
+	  param:
+	    w            : ファイルに書き出すos.Fileオブジェクト
+	  return:
+	    *json.Encoder: JSONエンコーダ
 
 	func (*json.Encoder).Encode(v any) error
-		param:
-		  v     : 書き込むオブジェクト(構造体)
-		return:
-		  error : エラー
+	  param:
+	    v     : 書き込むオブジェクト(構造体)
+	  return:
+	    error : エラー
 */
 func JsonSample003() {
 	fmt.Println("json_sample_003")

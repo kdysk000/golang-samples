@@ -9,11 +9,11 @@ import (
 /*
 	指定したpatternに一致するパス名をスライスで返す(Glob)
 	func Glob(pattern string) (matches []string, err error)
-		param:
-		  pattern 検索したいパターン
-		return:
-		  matches: パターンにマッチしたパスのスライス
-		  err    :
+	  param:
+	    pattern: 検索したいパターン
+	  return:
+	    matches: パターンにマッチしたパスのスライス
+	    err    :
 */
 func FilepathSample006() {
 	fmt.Println("filepath_sample_006")

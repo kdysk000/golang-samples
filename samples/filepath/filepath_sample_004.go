@@ -8,11 +8,11 @@ import (
 /*
 	linkを指定した場合、リンク先のパスを返す(EvalSymlinks)
 	func EvalSymlinks(path string) (string, error)
-		param:
-		  path linkパス
-		return:
-		  string: リンク先のパス
-		  error:
+	  param:
+	    path  : linkパス
+	  return:
+	    string: リンク先のパス
+	    error :
 */
 func FilepathSample004() {
 	fmt.Println("filepath_sample_004")

@@ -10,12 +10,12 @@ import (
 	スライスに指定したindexへ要素を追加する(Insert)
 
 	func Insert(s S, i int, v …E) S
-		param:
-		  s: スライス
-		  i: 追加するIndex
-		  v: 追加する要素
-		return:
-		  S: 追加後のスライス
+	  param:
+	    s: スライス
+	    i: 追加するIndex
+	    v: 追加する要素
+	  return:
+	    S: 追加後のスライス
 */
 func SlicesSample013() {
 	fmt.Println("slices_sample_013")

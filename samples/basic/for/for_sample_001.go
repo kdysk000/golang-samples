@@ -8,9 +8,9 @@ import (
 	基本的なfor文
 
 	書式：
-		for 初期値; 条件; 増減 {
-    		// 繰り返し処理する内容
-		}
+	  for 初期値; 条件; 増減 {
+	  	// 繰り返し処理する内容
+	  }
 */
 func ForSample001() {
 	fmt.Println("for_sample_001")

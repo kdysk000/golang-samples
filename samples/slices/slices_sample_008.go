@@ -10,11 +10,11 @@ import (
 	スライスに要素が含まれているか判定(Contains)
 
 	func Contains(s []E, v E) bool
-		param:
-		  s: スライス
-		  v: 検索する要素
-		return:
-		  bool: みつかったかどうか
+	  param:
+	    s: スライス
+	    v: 検索する要素
+	  return:
+	    bool: みつかったかどうか
 */
 func SlicesSample008() {
 	fmt.Println("slices_sample_008")
