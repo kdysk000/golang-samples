@@ -9,6 +9,7 @@ import (
 
 /*
 	JSONファイルをGoオブジェクト(構造体)に読み込む(NewDecoder、Decode)
+
 	func json.NewDecoder(r io.Reader) *json.Decoder
 	  param:
 	    r            : 読み出すos.Fileオブジェクト

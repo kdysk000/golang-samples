@@ -7,15 +7,16 @@ import (
 
 /*
 	文字列から指定のサフィックスを除去(TrimSuffix)
+
 	TrimSuffix(s, suffix string) string
-		概要
-		  sから接頭辞suffixを除いた文字列を返す
-		  sがsuffixから始まらない場合はsをそのまま返す
-		param:
-		  s     : 文字列
-		  suffix: 除去するサフィックス
-		return:
-		  string: 除去後の文字列
+	  概要
+	    sから接頭辞suffixを除いた文字列を返す
+	    sがsuffixから始まらない場合はsをそのまま返す
+	  param:
+	    s     : 文字列
+	    suffix: 除去するサフィックス
+	  return:
+	    string: 除去後の文字列
 */
 func StringsSample028() {
 	fmt.Println("strings_sample_028")

@@ -7,6 +7,7 @@ import (
 
 /*
 	ログの出力(Print/Println/Printf)
+
 	func Print(v ...any)
 	func Println(v ...any)
 	func Printf(format string, v ...any)

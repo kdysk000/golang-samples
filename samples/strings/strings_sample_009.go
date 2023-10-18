@@ -7,12 +7,13 @@ import (
 
 /*
 	文字列がprefixで始まるかどうかを判定(HasPrefix)
+
 	HasPrefix(s, prefix string) bool
-		param:
-		  s     : 文字列
-		  prefix: 判定したいプレフィックス
-		return:
-		  bool  :
+	  param:
+	    s     : 文字列
+	    prefix: 判定したいプレフィックス
+	  return:
+	    bool  :
 	注：
 	  大文字小文字は区別される
 	  prefixに空文字が指定されていたらtrueが返る

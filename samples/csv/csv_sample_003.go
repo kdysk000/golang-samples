@@ -9,6 +9,7 @@ import (
 
 /*
 	CSV形式のファイルを一括で読み出す(ReadAll)
+
 	func (r *csv.Reader) ReadAll() (records [][]string, err error)
 	  param:
 	    なし

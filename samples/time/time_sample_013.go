@@ -7,11 +7,12 @@ import (
 
 /*
 	日時の差分を求める(Sub)
+
 	func (t Time) Sub(u Time) Duration
-		param:
-		  u       : 差分を求めたいTimeオブジェクト
-		return:
-		  Duration: 差分結果
+	  param:
+	    u       : 差分を求めたいTimeオブジェクト
+	  return:
+	    Duration: 差分結果
 */
 func TimeSample013() {
 	fmt.Println("time_sample_013")

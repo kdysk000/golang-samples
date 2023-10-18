@@ -7,6 +7,7 @@ import (
 
 /*
 	パス名の最後の要素を除いたものを返す(Dir)
+
 	func Dir(path string) string
 	  param:
 	    path  : パス

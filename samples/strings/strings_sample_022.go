@@ -7,17 +7,18 @@ import (
 
 /*
 	文字列の分割 分割数指定版(SplitN)
+
 	SplitN(s, sep string, n int) []string
-		概要
-		  sをsepで分割したスライスを返す
-		  nは分割数を指定する
-		  nに負の数を指定した場合はSplitと同義
-		param:
-		  s       : 文字列
-		  sep     : 区切り文字列
-		  n       : 分割数
-		return:
-		  []string: 分割した文字列のスライス
+	  概要
+	    sをsepで分割したスライスを返す
+	    nは分割数を指定する
+	    nに負の数を指定した場合はSplitと同義
+	  param:
+	    s       : 文字列
+	    sep     : 区切り文字列
+	    n       : 分割数
+	  return:
+	    []string: 分割した文字列のスライス
 */
 func StringsSample022() {
 	fmt.Println("strings_sample_022")

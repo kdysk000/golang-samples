@@ -7,17 +7,18 @@ import (
 
 /*
 	文字列の置換(Replace)
+
 	Replace(s, old, new string, n int) string
-		概要
-		  sの中でoldと一致する文字列をnewに置換する
-		  nに負の値を指定した場合は全て置換
-		param:
-		  s     : 文字列
-		  old   : 置換前の文字列
-		  new   : 置換後の文字列
-		  n     : 置換回数
-		return:
-		  string: 置換後の文字列
+	  概要
+	    sの中でoldと一致する文字列をnewに置換する
+	    nに負の値を指定した場合は全て置換
+	  param:
+	    s     : 文字列
+	    old   : 置換前の文字列
+	    new   : 置換後の文字列
+	    n     : 置換回数
+	  return:
+	    string: 置換後の文字列
 */
 func StringsSample018() {
 	fmt.Println("strings_sample_018")

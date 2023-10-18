@@ -8,6 +8,7 @@ import (
 
 /*
     テンポラリディレクトリの作成(MkdirTemp)
+
 	func MkdirTemp(dir string, pattern string) (string, error)
 	  param:
 	    dir    : ディレクトリの作成場所

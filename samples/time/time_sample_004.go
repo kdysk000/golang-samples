@@ -7,28 +7,32 @@ import (
 
 /*
 	Timeオブジェクトから時刻を取得する(Clock、Hour、Minute、Second)
+
 	func (t Time) Clock() (hour, min, sec int)
-		param:
-		  なし
-		return:
-		  hour : 時
-		  min  : 分
-		  sec  : 秒
+	  param:
+	    なし
+	  return:
+	    hour : 時
+	    min  : 分
+	    sec  : 秒
+
 	func (t Time) Hour() int
-		param:
-		  なし
-		return:
-		  int : 時
+	  param:
+	    なし
+	  return:
+	    int : 時
+
 	func (t Time) Minute() int
-		param:
-		  なし
-		return:
-		  int : 分
+	  param:
+	    なし
+	  return:
+	    int : 分
+
 	func (t Time) Second() int
-		param:
-		  なし
-		return:
-		  int : 秒
+	  param:
+	    なし
+	  return:
+	    int : 秒
 */
 func TimeSample004() {
 	fmt.Println("time_sample_004")

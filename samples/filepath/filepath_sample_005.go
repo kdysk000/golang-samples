@@ -7,6 +7,7 @@ import (
 
 /*
 	パス名から拡張子を取得する(Ext)
+
 	func Ext(path string) string
 	  param:
 	    path  : パス

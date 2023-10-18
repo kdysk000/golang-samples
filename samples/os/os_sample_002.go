@@ -8,6 +8,7 @@ import (
 
 /*
 	ディレクトの移動(Chdir)
+
 	func Chdir(dir string) error
 	  param:
 	    dir  : 移動するディレクトリのパス

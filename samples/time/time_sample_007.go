@@ -7,12 +7,13 @@ import (
 
 /*
 	UNIXタイムをTimeオブジェクトに変換する(time.Unix)
+
 	func Unix(sec int64, nsec int64) Time
-		param:
-		  sec : 秒
-          nsec: ナノ秒
-		return:
-		  Time: Timeオブジェクト
+	  param:
+	    sec : 秒
+        nsec: ナノ秒
+	  return:
+	    Time: Timeオブジェクト
 */
 func TimeSample007() {
 	fmt.Println("time_sample_007")

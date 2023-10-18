@@ -7,29 +7,32 @@ import (
 
 /*
 	文字列を数値に変換する(ParseInt、ParseUint、ParseFloat)
+
 	func ParseInt(s string, base int, bitSize int) (i int64, err error)
-		param:
-		  s      : 数値文字列
-		  base   : 変換に用いる基数(2〜36)。0の場合s文字列の書式から判断する(0x接頭詞がついていたら16進数など)
-		  bitsize: 0,8,16,32,64(それぞれint, int8, int16, int32, uint64に該当)
-		return:
-		  i      : 変換した数値
-		  err    : エラー
+	  param:
+	    s      : 数値文字列
+	    base   : 変換に用いる基数(2〜36)。0の場合s文字列の書式から判断する(0x接頭詞がついていたら16進数など)
+	    bitsize: 0,8,16,32,64(それぞれint, int8, int16, int32, uint64に該当)
+	  return:
+	    i      : 変換した数値
+	    err    : エラー
+
 	func ParseUint(s string, base int, bitSize int) (n uint64, err error)
-		param:
-		  s      : 数値文字列
-		  base   : 変換に用いる基数(2〜36)。0の場合s文字列の書式から判断する(0x接頭詞がついていたら16進数など)
-		  bitsize: 0,8,16,32,64(それぞれuint, uint8, uint16, uint32, uint64に該当)
-		return:
-		  n      : 変換した数値
-		  err    : エラー
+	  param:
+	    s      : 数値文字列
+	    base   : 変換に用いる基数(2〜36)。0の場合s文字列の書式から判断する(0x接頭詞がついていたら16進数など)
+	    bitsize: 0,8,16,32,64(それぞれuint, uint8, uint16, uint32, uint64に該当)
+	  return:
+	    n      : 変換した数値
+	    err    : エラー
+
 	func ParseFloat(s string, bitSize int) (f float64, err error)
-		param:
-		  s      : 数値文字列
-		  bitsize: 32,64(float32, float64に該当)
-		return:
-		  f      : 変換した数値
-		  err    : エラー
+	  param:
+	    s      : 数値文字列
+	    bitsize: 32,64(float32, float64に該当)
+	  return:
+	    f      : 変換した数値
+	    err    : エラー
 */
 func StrconvSample003() {
 	fmt.Println("strconv_sample_003")

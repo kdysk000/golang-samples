@@ -7,13 +7,14 @@ import (
 
 /*
 	日付の加算減算(AddDate)
+
 	func (t Time) AddDate(years int, months int, days int) Time
-		param:
-		  years  : 加算減算する年
-		  months : 加算減算する月
-		  days   : 加算減算する日
-		return:
-		  Time: Timeオブジェクト
+	  param:
+	    years  : 加算減算する年
+	    months : 加算減算する月
+	    days   : 加算減算する日
+	  return:
+	    Time: Timeオブジェクト
 */
 func TimeSample011() {
 	fmt.Println("time_sample_011")

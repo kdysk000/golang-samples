@@ -9,6 +9,7 @@ import (
 
 /*
 	指定したパス以下のディレクトリを再帰的に探索する(Walk)
+
 	func Walk(root string, fn WalkFunc) error
 	  概要:
 	    第二引数にWalkFuncを指定するとファイルやディレクトリが見つかるたびにWalkFuncが実行される

@@ -7,11 +7,12 @@ import (
 
 /*
 	TimeオブジェクトをUNIXタイムに変換する(time.Unix)
+
 	func (t Time) Unix() int64
-		param:
-		  なし
-		return:
-		  int64: UNIXタイム
+	  param:
+	    なし
+	  return:
+	    int64: UNIXタイム
 */
 func TimeSample008() {
 	fmt.Println("time_sample_008")

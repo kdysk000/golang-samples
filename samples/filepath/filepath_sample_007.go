@@ -7,6 +7,7 @@ import (
 
 /*
 	パスが絶対パスかどうかを判定する(IsAbs)
+
 	func IsAbs(path string) bool
 	  param:
 	    path: パス

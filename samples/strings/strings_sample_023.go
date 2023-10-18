@@ -7,15 +7,16 @@ import (
 
 /*
 	文字列をセパレータのあとで分割 分割数指定版(SplitAfterN)
+
 	SplitAfterN(s, sep string, n int) []string
-		概要
-		  sをsepの後で分割したスライスを返す
-		  nに負の数を指定した場合はSplitAfterと同義
-		param:
-		  s       : 文字列
-		  sep     : 区切り文字列
-		return:
-		  []string: 分割した文字列のスライス
+	  概要
+	    sをsepの後で分割したスライスを返す
+	    nに負の数を指定した場合はSplitAfterと同義
+	  param:
+	    s       : 文字列
+	    sep     : 区切り文字列
+	  return:
+	    []string: 分割した文字列のスライス
 */
 func StringsSample023() {
 	fmt.Println("strings_sample_023")

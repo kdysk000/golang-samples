@@ -7,11 +7,12 @@ import (
 
 /*
 	現在時刻を取得する(time.Now)
+
 	func Now() Time
-		param:
-		  なし
-		return:
-		  Time: 現在時刻データを保持するTimeオブジェクト
+	  param:
+	    なし
+	  return:
+	    Time: 現在時刻データを保持するTimeオブジェクト
 */
 func TimeSample001() {
 	fmt.Println("time_sample_001")

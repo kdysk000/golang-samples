@@ -7,6 +7,7 @@ import (
 
 /*
 	パスをディレクトリ名とファイル名に分割する(Split)
+
 	func Split(path string) (dir, file string)
 	  param:
 	    path: パス

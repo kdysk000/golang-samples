@@ -7,32 +7,35 @@ import (
 
 /*
 	数値を文字列に変換する(FormatInt、FormatUint、FormatFloat)
+
 	func FormatInt(i int64, base int) string
-		param:
-		  i     : int64型
-		  base  : 基数(2〜36)
-		return:
-		  string: 数値文字列
+	  param:
+	    i     : int64型
+	    base  : 基数(2〜36)
+	  return:
+	    string: 数値文字列
+
 	func FormatUint(i uint64, base int) string
-		param:
-		  i     : uint64型
-		  base  : 基数(2〜36)
-		return:
-		  string: 数値文字列
+	  param:
+	    i     : uint64型
+	    base  : 基数(2〜36)
+	  return:
+	    string: 数値文字列
+
 	func FormatFloat(f float64, fmt byte, prec, bitSize int) string
-		param:
-		  f      : float64型
-		  fmt    : 出力書式
-					bは二進対数表記
-					eとEは十進対数表記
-					fは非対数表記
-					g,Gは大きい数は対数、そうでなければ非対数的に表記
-		  prec   : 桁数
-					eEFのとき小数点以下桁数
-					gGのとき全体の桁数
-		  bitsize: 32,64(float32, float64に該当)
-		return:
-		  string: 数値文字列
+	  param:
+	    f      : float64型
+	    fmt    : 出力書式
+	               bは二進対数表記
+		           eとEは十進対数表記
+		           fは非対数表記
+		           g,Gは大きい数は対数、そうでなければ非対数的に表記
+	    prec   : 桁数
+	               eEFのとき小数点以下桁数
+	               gGのとき全体の桁数
+	    bitsize: 32,64(float32, float64に該当)
+	  return:
+	    string : 数値文字列
 */
 func StrconvSample006() {
 	fmt.Println("strconv_sample_006")

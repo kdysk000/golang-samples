@@ -7,6 +7,7 @@ import (
 
 /*
 	環境変数の取得(Getenv)
+
 	func Getenv(key string) string
 	  param:
 	    key　 : 環境変数名

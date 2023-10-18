@@ -7,11 +7,12 @@ import (
 
 /*
 	時刻の加算減算(Add)
+
 	func (t Time) Add(d Duration) Time
-		param:
-		  d : 加算減算する時刻
-		return:
-		  Time: Timeオブジェクト
+	  param:
+	    d : 加算減算する時刻
+	  return:
+	    Time: Timeオブジェクト
 */
 func TimeSample010() {
 	fmt.Println("time_sample_010")

@@ -7,14 +7,15 @@ import (
 
 /*
 	文字列の結合(Join)
+
 	Join(elems []string, sep string) string
-		概要
-		  elemsの要素をsepで結合して1つの文字列を返す
-		param:
-		  elms  : 文字列のスライス
-		  sep   : セパレータ
-		return:
-		  string: 結合した文字列
+	  概要
+	    elemsの要素をsepで結合して1つの文字列を返す
+	  param:
+	    elms  : 文字列のスライス
+	    sep   : セパレータ
+	  return:
+	    string: 結合した文字列
 */
 func StringsSample017() {
 	fmt.Println("strings_sample_017")

@@ -7,11 +7,12 @@ import (
 
 /*
 	時刻オブジェクトを文字列に変換する(String)
+
 	func (t Time) String() string
-		param:
-		  なし
-		return:
-		  string: 時刻文字列
+	  param:
+	    なし
+	  return:
+	    string: 時刻文字列
 */
 func TimeSample006() {
 	fmt.Println("time_sample_006")

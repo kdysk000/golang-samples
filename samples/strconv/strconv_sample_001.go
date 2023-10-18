@@ -8,6 +8,7 @@ import (
 
 /*
 	文字列を数値(int)に変換する(Atoi)
+
 	func Atoi(s string) (int, error)
 		param:
 		  s    : 数値文字列

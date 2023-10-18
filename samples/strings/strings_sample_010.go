@@ -7,12 +7,13 @@ import (
 
 /*
 	文字列がsuffixで終わるかどうかを判定(HasSuffix)
+
 	HasSuffix(s, suffix string) bool
-		param:
-		  s     : 文字列
-		  suffix: 判定したいサフィックス
-		return:
-		  bool  :
+	  param:
+	    s     : 文字列
+	    suffix: 判定したいサフィックス
+	  return:
+	    bool  :
 	注：
 	  大文字小文字は区別される
 	  suffixに空文字が指定されていたらtrueが返る

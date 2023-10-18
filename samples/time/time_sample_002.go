@@ -7,18 +7,19 @@ import (
 
 /*
 	時刻オブジェクトを作成する(time.Date)
+
 	func Date(year int, month Month, day, hour, min, sec, nsec int, loc *Location) Time
-		param:
-		  year : 年
-		  month: 月
-		  day  : 日
-		  hour : 時
-		  min  : 分
-		  sec  : 秒
-		  nsec : ナノ秒
-		  loc  : Location(time.UTC、time.Local)
-		return:
-		  Time: Timeオブジェクト
+	  param:
+	    year : 年
+	    month: 月
+	    day  : 日
+	    hour : 時
+	    min  : 分
+	    sec  : 秒
+	    nsec : ナノ秒
+	    loc  : Location(time.UTC、time.Local)
+	  return:
+	    Time: Timeオブジェクト
 */
 func TimeSample002() {
 	fmt.Println("time_sample_002")

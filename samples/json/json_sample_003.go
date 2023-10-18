@@ -9,6 +9,7 @@ import (
 
 /*
 	Goオブジェクト(構造体)をJSONファイルに出力する(NewEncoder、Encode)
+
 	func json.NewEncoder(w io.Writer) *json.Encoder
 	  param:
 	    w            : ファイルに書き出すos.Fileオブジェクト

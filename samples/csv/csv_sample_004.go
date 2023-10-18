@@ -9,9 +9,10 @@ import (
 
 /*
 	CSVファイルに書き出す(NewWriter、Writer、Flash)
+
 	func NewWriter(w io.Writer) *csv.Writer
 	  param:
-	    w     : ioライタ(ファイルに書き出す場合はos.Fileを渡す)
+	    w          : ioライタ(ファイルに書き出す場合はos.Fileを渡す)
 	  return:
 	    *csv.Writer: csvライタ
 

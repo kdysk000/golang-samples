@@ -7,7 +7,7 @@ import (
 /*
 	構造体メンバのpublicとprivate
 
-	大文字で始まるものはパッケージ外からアクセス可能(Public)であり、
+	大文字で始まるものはパッケージ外からアクセス可能(public)であり、
 	小文字で始まるものはパッケージ外からアクセス不可(private)となる。
 */
 type testStruct2 struct {
@@ -20,7 +20,7 @@ func StructSample002() {
 
 	st := testStruct2{1, 2}
 
-	fmt.Println(st.a)  //Privateなメンバだが同じパッケージ内なのでアクセス可能
+	fmt.Println(st.a)  //privateなメンバだが同じパッケージ内なのでアクセス可能
 	fmt.Println(st.B)
 }
 

@@ -8,6 +8,7 @@ import (
 
 /*
 	相対パスを絶対パスに変換(Abs)
+
 	func Abs(path string) (string, error)
 	  param:
 	    path  : 相対パス

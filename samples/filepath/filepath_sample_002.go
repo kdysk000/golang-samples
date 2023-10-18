@@ -7,6 +7,7 @@ import (
 
 /*
 	パスの最後の要素を返す(Base)
+
 	func Base(path string) string
 	  param:
 	    path  : パス

@@ -7,14 +7,15 @@ import (
 
 /*
 	文字列中で検索文字列が最初に見つかる位置を返す(IndexAny)
+
 	IndexAny(s, chars string) int
-		概要
-		  sの中でcharsに含まれるUnicodeコードポイントのいずれかが最初に見つかる位置を返す
-		param:
-		  s    : 文字列
-		  chars: 検索したいUnicodeコードポイントの文字列
-		return:
-		  int  : 位置
+	  概要
+	    sの中でcharsに含まれるUnicodeコードポイントのいずれかが最初に見つかる位置を返す
+	  param:
+	    s    : 文字列
+	    chars: 検索したいUnicodeコードポイントの文字列
+	  return:
+	    int  : 位置
 	注：
 	  大文字小文字は区別される
 	  charsの中のUnicodeコードポイントのどれもがsに含まれていない場合、-1を返す

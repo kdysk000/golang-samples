@@ -12,7 +12,7 @@ import (
 	書式：
 	  func 関数名 (引数 型) (型, 型) {
 	    // do something
-		return 値
+	    return 値
 	  }
 */
 func FuncSample002() {

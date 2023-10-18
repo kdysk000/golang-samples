@@ -10,6 +10,7 @@ import (
 
 /*
 	CSV形式のファイルを読み出す(NewReader、Read)
+
 	func NewReader(r io.Reader) *csv.Reader
 	  param:
 	    r          : ioリーダ(ファイルを読みだす場合はos.Fileを渡す)

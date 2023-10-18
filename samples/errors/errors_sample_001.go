@@ -7,6 +7,7 @@ import (
 
 /*
 	エラーの定義(New)
+
 	func New(text string) error
 	  param:
 	    text: エラー文字列

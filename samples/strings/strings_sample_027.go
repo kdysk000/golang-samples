@@ -7,15 +7,16 @@ import (
 
 /*
 	文字列から指定のプレフィックスを除去(TrimPrefix)
+
 	TrimPrefix(s, prefix string) string
-		概要
-		  sから接頭辞prefixを除いた文字列を返す
-		  sがprefixから始まらない場合はsをそのまま返す
-		param:
-		  s     : 文字列
-		  prefix: 除去するプレフィックス
-		return:
-		  string: 除去後の文字列
+	  概要
+	    sから接頭辞prefixを除いた文字列を返す
+	    sがprefixから始まらない場合はsをそのまま返す
+	  param:
+	    s     : 文字列
+	    prefix: 除去するプレフィックス
+	  return:
+	    string: 除去後の文字列
 */
 func StringsSample027() {
 	fmt.Println("strings_sample_027")

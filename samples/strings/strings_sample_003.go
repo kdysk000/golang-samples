@@ -7,14 +7,15 @@ import (
 
 /*
 	指定の文字列に含まれるUnicodeコードポイントのいずれかが含まれているか(ContainsAny)
+
 	func ContainsAny(s, chars string) bool
-		概要:
-		  例えば、charsが"ABC"なら'A'と'B'と'C'のいずれかが s に含まれるかを判定する
-		param:
-		  s    : 検索対象の文字列
-		  chars: 検索する文字列
-		return:
-		  bool :
+	  概要:
+	    例えば、charsが"ABC"なら'A'と'B'と'C'のいずれかが s に含まれるかを判定する
+	  param:
+	    s    : 検索対象の文字列
+	    chars: 検索する文字列
+	  return:
+	    bool :
 */
 func StringsSample003() {
 	fmt.Println("strings_sample_003")

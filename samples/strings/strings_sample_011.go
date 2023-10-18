@@ -7,12 +7,13 @@ import (
 
 /*
 	文字列中で検索文字列が最初に見つかる位置を返す(Index)
+
 	Index(s, substr string) int
-		param:
-		  s     : 文字列
-		  substr: 検索したい文字列
-		return:
-		  int   : 位置
+	  param:
+	    s     : 文字列
+	    substr: 検索したい文字列
+	  return:
+	    int   : 位置
 	注：
 	  大文字小文字は区別される
 	  substrが含まれていない場合は-1を返す

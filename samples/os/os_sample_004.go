@@ -8,6 +8,7 @@ import (
 
 /*
 	ディレクトの作成(Mkdir)
+
 	func Mkdir(name string, perm FileMode) error
 	  param:
 	    name : 作成するディレクトリ名を含んだパス

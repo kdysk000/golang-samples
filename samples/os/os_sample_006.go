@@ -8,6 +8,7 @@ import (
 
 /*
     ファイルを開く(Open)、ファイルを閉じる(Close)
+
 	func Open(name string) (*File, error)
 	  param:
 	    name: ファイル名

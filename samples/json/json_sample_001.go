@@ -8,6 +8,7 @@ import (
 
 /*
 	Goオブジェクト(構造体)をJSON形式の文字列データに変換(Marshal)
+
 	func Marshal(v any) ([]byte, error)
 	  param:
 	    v     : 変換するオブジェクト

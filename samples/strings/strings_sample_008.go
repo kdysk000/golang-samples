@@ -7,12 +7,13 @@ import (
 
 /*
 	文字列を1つ以上のfを満たすUnicodeコードポイントで分割した文字列のスライスを返す(FieldsFunc)
+
 	FieldsFunc(s string, f func(rune) bool) []string
-		param:
-		  s       : 文字列
-		  f       : 判定関数
-		return:
-		  []string: 文字列のスライス
+	  param:
+	    s       : 文字列
+	    f       : 判定関数
+	  return:
+	    []string: 文字列のスライス
 
 	注：
 	  すべてのコードポイントがfを満たす、もしくはsが空文字の場合は空のスライスを返す

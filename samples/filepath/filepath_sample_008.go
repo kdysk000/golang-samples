@@ -7,6 +7,7 @@ import (
 
 /*
 	パス名を連結する(Join)
+
 	func Join(elem ...string) string
 	  param:
 	    elem     : ベースのパス名

@@ -7,11 +7,12 @@ import (
 
 /*
 	タイムゾーンの変更(In)
+
 	func (t Time) In(loc *Location) Time
-		param:
-		  loc : タイムゾーン
-		return:
-		  Time: Timeオブジェクト
+	  param:
+	    loc : タイムゾーン
+	  return:
+	    Time: Timeオブジェクト
 */
 func TimeSample009() {
 	fmt.Println("time_sample_009")

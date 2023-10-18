@@ -8,6 +8,7 @@ import (
 
 /*
 	カレントディレクトのパスを取得(Getwd)
+
 	func Getwd() (dir string, err error)
 	  param:
 	    なし

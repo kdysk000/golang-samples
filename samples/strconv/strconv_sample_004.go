@@ -7,11 +7,12 @@ import (
 
 /*
 	数値を文字列に変換する(Itoa)
+
 	func Itoa(i int) string
-		param:
-		  i     : int型
-		return:
-		  string: 変換した数値文字列
+	  param:
+	    i     : int型
+	  return:
+	    string: 変換した数値文字列
 */
 func StrconvSample004() {
 	fmt.Println("strconv_sample_004")
