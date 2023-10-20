@@ -9,7 +9,7 @@ import (
 
 	書式：
 	  if 変数名 := 値; 条件式 {
-	    // trueなら処理する
+	  	// trueなら処理する
 	  }
 
 	注：
@@ -21,9 +21,9 @@ func IfSample002() {
 	num := 5
 
 	if ret := mul(num); ret == 1 {
-		fmt.Println(num, "is odd number.")
+		fmt.Println(num, "is odd number")
 	} else {
-		fmt.Println(num, "is even number.")
+		fmt.Println(num, "is even number")
 	}
 }
 

@@ -62,8 +62,4 @@ func OsSample008() {
 		log.Fatal(err)
 		os.Exit(1)
 	}
-
-
-
-
 }

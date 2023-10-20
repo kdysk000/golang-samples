@@ -31,6 +31,8 @@ func SlicesSample003() {
 /*
   実行結果
   -------
-  3 true
+  cap: 10, len: 0
+  cap: 10, len: 1
+  cap:  1, len: 1
   -------
 */

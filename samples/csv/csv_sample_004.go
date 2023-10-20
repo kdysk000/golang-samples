@@ -41,12 +41,3 @@ func CsvSample004() {
 	writer.Write([]string{"100", "200", "300"})
 	writer.Write([]string{"XXX", "YYY", "ZZZ"})
 }
-
-/*
-  実行結果
-  -------
-  [name age address]
-  [hoge 20 tokyo]
-  [fuga 30 osaka]
-  -------
-*/

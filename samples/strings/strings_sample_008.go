@@ -29,7 +29,7 @@ func StringsSample008() {
 	str2 := strings.FieldsFunc("####", f)
 	str3 := strings.FieldsFunc("", f)
 
-	fmt.Println(str1[2])
+	fmt.Println(str1)
 	fmt.Println(str2)
 	fmt.Println(str3)
 

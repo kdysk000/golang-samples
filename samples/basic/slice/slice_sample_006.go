@@ -5,22 +5,22 @@ import (
 )
 
 /*
-	スライス特定の要素を取り出す
+	スライスの要素数を取得(len)
 */
-func SliceSample006() {
+func SliceSample06() {
 	fmt.Println("slice_sample_006")
 
 	s := []int{1,2,3,4,5}
+	num := len(s)
 
-	fmt.Println(s[0])          //先頭
-	fmt.Println(s[len(s)-1])   //末尾
+	fmt.Println(s)
+	fmt.Println(num)
 }
 
 /*
   実行結果
   -------
-  [0 1]
-  [8 9]
-  [2 3 4 5]
+  [1 2 3 4 5]
+  5
   -------
 */

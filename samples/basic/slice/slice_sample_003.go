@@ -7,34 +7,24 @@ import (
 /*
 	スライスに要素を追加する(append)
 
-	s2 = append(s1, 追加する値1, 追加する値2, ・・・)
-	  s1: 値を追加したいスライス
-	  s2: 追加後のスライス
-
-	あるスライスに別のスライスの内容を全て追加するには ... を用いる
+	書式
+	  s2 = append(s1, 追加する値1, 追加する値2, ・・・)
+	    s1: 値を追加したいスライス
+	    s2: 追加後のスライス
 */
 func SliceSample003() {
 	fmt.Println("slice_sample_003")
 
 	// 空のスライスを定義したあとappendで追加
-	s1 := []string{}
-	s1 = append(s1, "ABC")
+	s := []string{}
+	s = append(s, "ABC")
 
-	s2 := []string{"DEF", "GHI"}
-
-	// 2つのスライスを結合
-	s3 := append(s1, s2...)
-
-	fmt.Println(s1)
-	fmt.Println(s2)
-	fmt.Println(s3)
+	fmt.Println(s)
 }
 
 /*
   実行結果
   -------
   [ABC]
-  [DEF GHI]
-  [ABC DEF GHI]
   -------
 */

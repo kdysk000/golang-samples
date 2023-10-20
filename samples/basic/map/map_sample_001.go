@@ -30,6 +30,6 @@ func MapSample001() {
 /*
   実行結果
   -------
-  [ABC DEF GHI]
+  map[apple:1 banana:3 orange:2]
   -------
 */

@@ -33,3 +33,10 @@ func JsonSample001() {
 
 	fmt.Println(string(bytes))
 }
+
+/*
+  実行結果
+  -------
+  {"name":"hogehoge","age":20}
+  -------
+*/

@@ -13,11 +13,11 @@ func IfSample001() {
 	num := 2
 
 	if num == 0 {
-		fmt.Println("num is 0.")
+		fmt.Println("num is 0")
 	} else if num == 1 {
-		fmt.Println("num is 1.")
+		fmt.Println("num is 1")
 	} else {
-		fmt.Println("num is 2.")
+		fmt.Println("num is 2")
 	}
 }
 

@@ -33,3 +33,11 @@ func JsonSample002() {
 	fmt.Println(p.Name)
 	fmt.Println(p.Age)
 }
+
+/*
+  実行結果
+  -------
+  hogehoge
+  30
+  -------
+*/

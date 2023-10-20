@@ -5,25 +5,25 @@ import (
 )
 
 /*
-	スライスを結合する(append)
+	スライスを空にする
+
+	nilを代入する
 */
 func SliceSample009() {
 	fmt.Println("slice_sample_009")
 
-	s1 := []int{1,2,3,4,5}
-	s2 := []int{6,7,8,9,10}
+	s := []int{1,2,3,4,5}
 
-	s3 := append(s1, s2...)
-	fmt.Println(s1)
-	fmt.Println(s2)
-	fmt.Println(s3)
+	fmt.Println(s)
+
+	s = nil
+	fmt.Println(s)
 }
 
 /*
   実行結果
   -------
   [1 2 3 4 5]
-  [6 7 8 9 10]
-  [1 2 3 4 5 6 7 8 9 10]
+  []
   -------
 */

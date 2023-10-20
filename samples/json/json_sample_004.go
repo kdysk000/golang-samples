@@ -46,3 +46,10 @@ func JsonSample004() {
 
 	fmt.Println(p)
 }
+
+/*
+  実行結果
+  -------
+  {hogehoge 30}
+  -------
+*/
