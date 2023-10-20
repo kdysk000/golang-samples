@@ -24,6 +24,6 @@ func IfSample001() {
 /*
   実行結果
   -------
-  num is 2.
+  num is 2
   -------
 */

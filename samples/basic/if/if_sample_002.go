@@ -34,6 +34,6 @@ func mul(num int) int {
 /*
   実行結果
   -------
-  5 is odd number.
+  5 is odd number
   -------
 */
