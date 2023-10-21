@@ -22,7 +22,6 @@ func ArraySample006() {
 
 	fmt.Println(ar[:2])          //先頭から2つ
 	fmt.Println(ar[len(ar)-2:])  //末尾2つ
-
 	fmt.Println(ar[2:6])         //index2～5
 }
 

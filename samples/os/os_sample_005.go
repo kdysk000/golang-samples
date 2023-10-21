@@ -14,7 +14,7 @@ func OsSample005() {
 	fmt.Println("os_sample_005")
 
 	os.Setenv("TEST", "test")
-    fmt.Println("Environment(TEST):", os.Getenv("TEST"))
+	fmt.Println("Environment(TEST):", os.Getenv("TEST"))
 }
 
 /*

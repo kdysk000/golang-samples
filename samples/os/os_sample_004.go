@@ -15,7 +15,7 @@ import (
 func OsSample004() {
 	fmt.Println("os_sample_004")
 
-    for _, env := range os.Environ() {
-        fmt.Println(env)
-    }
+	for _, env := range os.Environ() {
+		fmt.Println(env)
+	}
 }

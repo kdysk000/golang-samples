@@ -13,7 +13,6 @@ import (
 func ArraySample002() {
 	fmt.Println("array_sample_002")
 
-	// 空の配列を定義して後から代入
 	ar1 := [3]int{0, 1, 2}
 	ar2 := [3]int{0, 1, 2}
 	ar3 := [3]int{0, 1, 3}
