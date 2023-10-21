@@ -7,7 +7,7 @@ import (
 /*
 	スライスの要素数を取得(len)
 */
-func SliceSample06() {
+func SliceSample006() {
 	fmt.Println("slice_sample_006")
 
 	s := []int{1,2,3,4,5}

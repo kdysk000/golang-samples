@@ -11,8 +11,8 @@ import (
 	小文字で始まるものはパッケージ外からアクセス不可(private)となる。
 */
 type testStruct2 struct {
-	a int
-	B int
+	x int
+	Y int
 }
 
 func StructSample002() {
@@ -20,8 +20,8 @@ func StructSample002() {
 
 	st := testStruct2{1, 2}
 
-	fmt.Println(st.a)  //privateなメンバだが同じパッケージ内なのでアクセス可能
-	fmt.Println(st.B)
+	fmt.Println(st.x)  //privateなメンバだが同じパッケージ内なのでアクセス可能
+	fmt.Println(st.Y)
 }
 
 /*

@@ -16,19 +16,19 @@ type testStruct5 struct {
 	y int
 }
 
-type testStruct6 struct {
+type wrapTestStruct5 struct {
 	testStruct5  //testStruct5を埋め込み
 }
 
 func StructSample005() {
 	fmt.Println("struct_sample_005")
 
-	st := testStruct6{}
+	st := wrapTestStruct5{}
 	st.setNum(5, 10)
 	fmt.Println(st.x, st.y)
 }
 
-func (s *testStruct6) setNum(x int, y int) {
+func (s *wrapTestStruct5) setNum(x int, y int) {
 	//testStruct6のメンバのようにtestStruct5のメンバにアクセスできる
 	s.x = x
 	s.y = y

@@ -176,6 +176,7 @@ func GetFunc(name string) []func() {
 		mystruct.StructSample003,
 		mystruct.StructSample004,
 		mystruct.StructSample005,
+		mystruct.StructSample006,
 	}
 	switchfunc := []func(){
 		myswitch.SwitchSample001,
