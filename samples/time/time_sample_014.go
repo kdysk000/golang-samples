@@ -6,42 +6,35 @@ import (
 )
 
 /*
-	日時の比較(Equal、After、Before)
+	日時の差分を求める(Since)
 
-	func (t Time) Equal(u Time) bool
+	func Since(t Time) Duration
+	  概要
+	    現在日時と引数で指定された日時の差分を求める
+		Sub()と違って開始時点のTImeオブジェクトだけで実行できる
 	  param:
-	    u   : 比較するTimeオブジェクト
+	    t       : Timeオブジェクト
 	  return:
-	    bool: 比較結果
-
-	func (t Time) After(u Time) bool
-	  param:
-	    u   : 比較するTimeオブジェクト
-	  return:
-	    bool: 比較結果(uよりも後の日時ならtrue)
-
-	func (t Time) Before(u Time) bool
-	  param:
-	    u   : 比較するTimeオブジェクト
-	  return:
-	    bool: 比較結果(uよりも前の日時ならtrue)
+	    Duration: 差分結果
 */
 func TimeSample014() {
 	fmt.Println("time_sample_014")
 
-	t1 := time.Date(2001, 1, 1, 23, 59, 59, 0, time.UTC)
-	t2 := time.Date(2001, 1, 1, 23, 59, 58, 0, time.UTC)
+	t1 := time.Now()
+	t2 := t1.Add(time.Second * -1)  //現在時刻から1秒前
 
-	fmt.Println(t1.Equal(t2))
-	fmt.Println(t1.After(t2))
-	fmt.Println(t1.Before(t2))
+	sub := time.Since(t2)
+
+	fmt.Println(t1)
+	fmt.Println(t2)
+	fmt.Println(sub)
 }
 
 /*
   実行結果
   -------
-  false
-  true
-  false
+  2023-10-21 22:49:43.8646511 +0900 JST m=+0.000097401
+  2023-10-21 22:49:42.8646511 +0900 JST m=-0.999902599
+  1.0000003s
   -------
 */

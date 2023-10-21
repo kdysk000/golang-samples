@@ -7,28 +7,30 @@ import (
 )
 
 /*
-    ファイルの書き込み(WriteFile)
+    ファイルの読み込み(ReadFile)
 
-	func WriteFile(name string, data []byte, perm FileMode) error
+	func ReadFile(name string) ([]byte, error)
 	  param:
-	    name : ファイルパス
-	    data : ファイルに書き込むデータを格納したbyte型のスライス
-	    perm : パーミッション
+	    name   : ファイルパス
 	  return:
-	    error: エラー
-	  注：
-	    ファイルが既に存在している場合、中身を空にしてデータを書き込む。
-	    ファイルが存在していなかった場合はファイルを作成する。
+	    []byte : ファイルから読み込んだデータを格納するbyte型のスライス
+	    error　: エラー
 */
 func OsSample011() {
 	fmt.Println("os_sample_011")
 
-	str := "write this file by Golang!"
-	data := []byte(str)
-	err := os.WriteFile("data/os/test.txt", data, 0755)
+	bytes, err := os.ReadFile("data/os/test.txt")
 	if err != nil {
 		log.Fatal(err)
 	}
 
-	fmt.Printf("Write file success.")
+	fmt.Println(string(bytes))
 }
+
+/*
+  実行結果
+  -------
+  test
+
+  -------
+*/

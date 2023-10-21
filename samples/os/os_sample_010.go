@@ -2,61 +2,76 @@ package os
 
 import (
 	"fmt"
+	"io"
 	"log"
 	"os"
 )
 
 /*
-    ファイルの書き込み(Write、WriteAt)
+    ファイルの読み込み(Read、ReadAt)
 
-	func (f *File) Write(b []byte) (n int, err error)
-	  概要:
-	    ファイルの先頭から書き込み
+	func (f *File) Read(b []byte) (n int, err error)
+	  概要：
+	    先頭からファイルを読み込む
 	  param:
-	    b    : ファイルに書き込むデータを格納したbyte型のスライス
+	    b    : ファイルから読み込んだデータを格納するbyte型のスライス
 	  return:
-	    n    : 書きこんだバイト数
+	    n    : 読みこんだバイト数
 	    error: エラー
 
-	func (f *File) WriteAt(b []byte, off int64) (n int, err error)
-	  概要:
-	    指定した位置から書き込み
-	    指定した位置がファイルサイズを超えている場合は、元のファイル内容の直後から書き込みが行われる
+	func (f *File) ReadAt(b []byte, off int64) (n int, err error)
+	  概要：
+	    指定した位置からファイルを読み込む
 	  param:
-	    b    : ファイルに書き込むデータを格納したbyte型のスライス
-	    off  : 書き込みを開始するバイト位置(0が先頭)
+	    b    : ファイルから読み込んだデータを格納するbyte型のスライス
+	    off  : 読み取りを開始するバイト位置(0が先頭)
 	  return:
-	    n    : 書きこんだバイト数
+	    n    : 読みこんだバイト数
 	    error: エラー
+
+	  注：
+	    Read()は読み込んだバイト数が0のときだけ io.EOF を返すが、
+	    ReadAt()はファイル内容が充分になければ読み込んだバイト数が0でなくても io.EOF を返す
 */
 func OsSample010() {
 	fmt.Println("os_sample_010")
 
-	// 書き込みの場合はCreate()でファイルを開く
-	f, err := os.Create("data/os/test.txt")
+	f, err := os.Open("data/os/test.txt")
 	if err != nil {
 		log.Fatal(err)
 		os.Exit(1)
 	}
 	defer f.Close()
 
-	str1 := "123456789\n"
-	data1 := []byte(str1)
-	count1, err := f.Write(data1)
+	data1 := make([]byte, 256)
+	count1, err := f.Read(data1)
 	if err != nil {
 		log.Fatal(err)
 		os.Exit(1)
 	}
 
-	fmt.Printf("write %d bytes:\n", count1)
+	fmt.Printf("read %d bytes:\n", count1)
+	fmt.Println(string(data1))
 
-	str2 := "ABCDEFGHI\n"
-	data2 := []byte(str2)
-	count2, err := f.WriteAt(data2, 10)  // 位置10(11バイト目)から書き込む
-	if err != nil {
+	data2 := make([]byte, 256)
+	count2, err := f.ReadAt(data2, 2)  // 位置2(3バイト目)から読む込み
+	if err == io.EOF {
+		fmt.Printf("read at %d bytes:\n", count2)
+		fmt.Println(string(data2))
+	} else if err != nil {
 		log.Fatal(err)
 		os.Exit(1)
 	}
-
-	fmt.Printf("write at %d bytes:\n", count2)
 }
+
+/*
+  実行結果
+  -------
+  read 5 bytes:
+  test
+
+  read at 3 bytes:
+  st
+  
+  -------
+*/

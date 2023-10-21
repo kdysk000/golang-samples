@@ -101,6 +101,8 @@ func GetFunc(name string) []func() {
 		myos.OsSample010,
 		myos.OsSample011,
 		myos.OsSample012,
+		myos.OsSample013,
+		myos.OsSample014,
 	}
 	slicefunc := []func(){
 		myslice.SliceSample001,
@@ -198,6 +200,9 @@ func GetFunc(name string) []func() {
 		mytime.TimeSample013,
 		mytime.TimeSample014,
 		mytime.TimeSample015,
+		mytime.TimeSample016,
+		mytime.TimeSample017,
+		mytime.TimeSample018,
 	}
 
 	switch name {

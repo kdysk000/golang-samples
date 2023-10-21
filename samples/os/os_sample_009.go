@@ -7,22 +7,27 @@ import (
 )
 
 /*
-    ファイルの読み込み(ReadFile)
+    書き込み用にファイルを開く(Create)
 
-	func ReadFile(name string) ([]byte, error)
+	func Create(name string) (*File, error)
 	  param:
-	    name   : ファイルパス
+	    name: ファイル名
 	  return:
-	    []byte : ファイルから読み込んだデータを格納するbyte型のスライス
-	    error　: エラー
+	    *File: ファイルオブジェクト
+	    error: エラー
+	  注：
+	    Create()関数は、ファイルが既に存在している場合、中身を空にして開く。
+	    ファイルが存在していなかった場合はファイルを作成する。
 */
 func OsSample009() {
 	fmt.Println("os_sample_009")
 
-	bytes, err := os.ReadFile("data/os/test.txt")
+	fp, err := os.Create("data/os/test.txt")
 	if err != nil {
 		log.Fatal(err)
+		os.Exit(1)
 	}
+	defer fp.Close()
 
-	fmt.Println(string(bytes))
+	fmt.Println("file open success.")
 }
