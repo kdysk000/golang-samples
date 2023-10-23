@@ -7,4 +7,4 @@
 7. [関数(func)](./func)
 8. [構造体(struct)](./struct)
 9. [インターフェース(interface)](./interface)
-10. [ごルーチン(goroutine)](./goroutine)
+10. [ゴルーチン(goroutine)](./goroutine)
