@@ -12,7 +12,7 @@ import (
 */
 func testFunc2(a interface {}) {
 	str := a.(string)
-    fmt.Printf("%T\n", str)
+	fmt.Printf("%T\n", str)
 }
 
 func InterfaceSample003() {

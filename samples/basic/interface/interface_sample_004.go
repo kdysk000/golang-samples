@@ -32,7 +32,7 @@ func (t testStruct2) testPrint2(i int) {
 func testFunc3(a interface {}) {
 	//aがtestStruct1なら変換可能(okがtrueになる)
 	_, ok := a.(testStruct1)
-    fmt.Println("ok:", ok)
+	fmt.Println("ok:", ok)
 }
 
 func InterfaceSample004() {

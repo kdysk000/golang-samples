@@ -6,3 +6,4 @@
 6. [ループ(for)](./for)
 7. [関数(func)](./func)
 8. [構造体(struct)](./struct)
+9. [インターフェース(interface)](./interface)
