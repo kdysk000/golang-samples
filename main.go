@@ -23,6 +23,7 @@ func main() {
 	case "for":
 	case "func":
 	case "if":
+	case "interface":
 	case "json":
 	case "log":
 	case "map":

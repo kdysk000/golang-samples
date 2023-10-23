@@ -5,6 +5,7 @@ import (
 	myfor "go-samples/samples/basic/for"
 	myfunc "go-samples/samples/basic/func"
 	myif "go-samples/samples/basic/if"
+	myinterface "go-samples/samples/basic/interface"
 	mymap "go-samples/samples/basic/map"
 	myslice "go-samples/samples/basic/slice"
 	mystruct "go-samples/samples/basic/struct"
@@ -72,6 +73,13 @@ func GetFunc(name string) []func() {
 	iffunc := []func(){
 		myif.IfSample001,
 		myif.IfSample002,
+	}
+	interfacefunc := []func(){
+		myinterface.InterfaceSample001,
+		myinterface.InterfaceSample002,
+		myinterface.InterfaceSample003,
+		myinterface.InterfaceSample004,
+		myinterface.InterfaceSample005,
 	}
 	jsonfunc := []func(){
 		myjson.JsonSample001,
@@ -220,6 +228,8 @@ func GetFunc(name string) []func() {
 		return funcfunc
 	case "if":
 		return iffunc
+	case "interface":
+		return interfacefunc
 	case "json":
 		return jsonfunc
 	case "log":
