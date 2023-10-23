@@ -4,6 +4,7 @@ import (
 	myarray "go-samples/samples/basic/array"
 	myfor "go-samples/samples/basic/for"
 	myfunc "go-samples/samples/basic/func"
+	mygoroutine "go-samples/samples/basic/goroutine"
 	myif "go-samples/samples/basic/if"
 	myinterface "go-samples/samples/basic/interface"
 	mymap "go-samples/samples/basic/map"
@@ -69,6 +70,9 @@ func GetFunc(name string) []func() {
 		myfunc.FuncSample007,
 		myfunc.FuncSample008,
 		myfunc.FuncSample009,
+	}
+	goroutinefunc := []func(){
+		mygoroutine.GoroutineSample001,
 	}
 	iffunc := []func(){
 		myif.IfSample001,
@@ -226,6 +230,8 @@ func GetFunc(name string) []func() {
 		return forfunc
 	case "func":
 		return funcfunc
+	case "goroutine":
+		return goroutinefunc
 	case "if":
 		return iffunc
 	case "interface":

@@ -22,6 +22,7 @@ func main() {
 	case "filepath":
 	case "for":
 	case "func":
+	case "goroutine":
 	case "if":
 	case "interface":
 	case "json":
