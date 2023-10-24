@@ -73,6 +73,9 @@ func GetFunc(name string) []func() {
 	}
 	goroutinefunc := []func(){
 		mygoroutine.GoroutineSample001,
+		mygoroutine.GoroutineSample002,
+		mygoroutine.GoroutineSample003,
+		mygoroutine.GoroutineSample004,
 	}
 	iffunc := []func(){
 		myif.IfSample001,
