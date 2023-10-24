@@ -32,12 +32,12 @@ func GoroutineSample002() {
 	defer close(ch)
 
 	// チャネルをゴルーチンに渡して実行
-    go funcB(ch)
+	go funcB(ch)
 
 	// チャネルからメッセージを受信する(受信するまで待機)
-    msg := <- ch 
+	msg := <- ch 
 
-    fmt.Println(msg)
+	fmt.Println(msg)
 }
 
 /*

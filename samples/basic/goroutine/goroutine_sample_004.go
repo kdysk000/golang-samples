@@ -40,7 +40,7 @@ func GoroutineSample004() {
 	defer close(ch)
 
 	// チャネルをゴルーチンに渡して実行
-    go funcD(ch)
+	go funcD(ch)
 
 	select {
 	case msg, ok := <- ch:

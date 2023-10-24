@@ -29,10 +29,10 @@ func GoroutineSample003() {
 	defer close(ch)
 
 	// チャネルをゴルーチンに渡して実行
-    go funcC(ch)
+	go funcC(ch)
 
 	// チャネルからメッセージを受信する
-    msg, ok := <- ch
+	msg, ok := <- ch
 	if ok {
 		fmt.Println(msg)
 	} else {
