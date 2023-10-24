@@ -15,7 +15,7 @@ import (
 	  select {
 	  case msg, ok := <- ch:
 	  	if ok {
-      		・・・
+	  		・・・
 	  	} else {
 	  		・・・
 	  	}
