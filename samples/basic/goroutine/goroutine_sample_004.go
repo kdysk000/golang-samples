@@ -51,7 +51,7 @@ func GoroutineSample004() {
 		}
 	default:
 		//このプログラムではここが実行される
-		//funcDは1秒sleep後にメッセージを送信するため、先にselectが実行されるため(ブロックされず先に進むため)
+		//funcDは1秒sleep後にメッセージを送信するので先にselectが実行されるため(ブロックされず先に進むため)
 		fmt.Println("no message")
 	}
 }
