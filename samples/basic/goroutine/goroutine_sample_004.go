@@ -16,9 +16,9 @@ import (
 	  case msg, ok := <- ch:
 	  	if ok {
       		・・・
-      	} else {
-      		・・・
-      	}
+	  	} else {
+	  		・・・
+	  	}
 	  default:
 	  	・・・
 	  }

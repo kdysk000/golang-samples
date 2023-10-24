@@ -14,7 +14,7 @@ import (
 	書式
 	  msg, ok := <- ch
 	    値を受信した場合           ：ok が true
-		チャネルがクローズされた場合：ok が false
+	    チャネルがクローズされた場合：ok が false
 */
 func funcC(ch chan string) {
 	time.Sleep(1 * time.Second)
