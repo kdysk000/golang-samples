@@ -19,11 +19,11 @@ import (
 func ForSample002() {
 	fmt.Println("for_sample_002")
 
-    i := 0
-    for i < 5 {
-        fmt.Println(i)
-        i++
-    }
+	i := 0
+	for i < 5 {
+		fmt.Println(i)
+		i++
+	}
 }
 
 /*

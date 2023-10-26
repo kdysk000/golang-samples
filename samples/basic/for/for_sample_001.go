@@ -16,8 +16,8 @@ func ForSample001() {
 	fmt.Println("for_sample_001")
 
 	for i := 0; i < 5; i++ {
-        fmt.Println(i)
-    }
+		fmt.Println(i)
+	}
 }
 
 /*
