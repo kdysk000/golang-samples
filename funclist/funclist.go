@@ -64,6 +64,7 @@ func GetFunc(name string) []func() {
 		myfor.ForSample003,
 		myfor.ForSample004,
 		myfor.ForSample005,
+		myfor.ForSample006,
 	}
 	funcfunc := []func(){
 		myfunc.FuncSample001,
