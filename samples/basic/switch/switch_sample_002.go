@@ -28,6 +28,6 @@ func SwitchSample002() {
 /*
   実行結果
   -------
-  small
+  Small
   -------
 */

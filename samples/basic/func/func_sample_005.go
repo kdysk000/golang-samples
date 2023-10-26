@@ -25,7 +25,7 @@ func testFunc1(x int) int {
 /*
   実行結果
   -------
-  This is testFunc
+  This is testFunc1
   5
   -------
 */

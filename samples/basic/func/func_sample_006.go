@@ -6,8 +6,6 @@ import (
 
 /*
 	関数リテラル(匿名関数)
-
-	関数も変数で持つことができる
 */
 func FuncSample006() {
 	fmt.Println("func_sample_006")

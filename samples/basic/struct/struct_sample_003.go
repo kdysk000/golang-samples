@@ -12,7 +12,7 @@ import (
 	  	// do somthing
 	  }
 
-	下記 (s testStruct2) の s はレシーバと呼ばれる。
+	下記 (s testStruct3) の s はレシーバと呼ばれる。
 	関数の定義にレシーバを指定することによって、レシーバで指定した型(構造体)と関数を関連付ける。
 */
 type testStruct3 struct {

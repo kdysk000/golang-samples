@@ -31,6 +31,9 @@ func GetFunc(name string) []func() {
 		myarray.ArraySample004,
 		myarray.ArraySample005,
 		myarray.ArraySample006,
+		myarray.ArraySample007,
+		myarray.ArraySample008,
+		myarray.ArraySample009,
 	}
 	csvfunc := []func(){
 		mycsv.CsvSample001,

@@ -5,26 +5,31 @@ import (
 )
 
 /*
-	配列の比較
+	配列の初期値
 
-	・== 演算子で全ての要素の値を比較し全て同じ場合にtrueが返る
-	・< や > 演算子は配列の比較に使用できない
+	・数値は 0
+	・string は ""
+	・bool は false
+
 */
 func ArraySample002() {
 	fmt.Println("array_sample_002")
 
-	ar1 := [3]int{0, 1, 2}
-	ar2 := [3]int{0, 1, 2}
-	ar3 := [3]int{0, 1, 3}
+	// 空の配列
+	ar1 := [3]int{}
+	ar2 := [3]string{}
+	ar3 := [3]bool{}
 
-	fmt.Println(ar1 == ar2)
-	fmt.Println(ar1 == ar3)
+	fmt.Println("ar1:", ar1)
+	fmt.Println("ar2:", ar2)
+	fmt.Println("ar3:", ar3)
 }
 
 /*
   実行結果
   -------
-  true
-  false
+  ar1: [0 0 0]
+  ar2: [  ]
+  ar3: [false false false]
   -------
 */
