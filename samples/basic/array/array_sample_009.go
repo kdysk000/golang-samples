@@ -11,7 +11,7 @@ import (
 	  func copy(dst, src []Type) int
 	    param:
 	      dst: コピー先配列
-		  src: コピー元配列
+	      src: コピー元配列
 	    return:
 	      int: コピーした要素数
 

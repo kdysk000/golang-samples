@@ -76,6 +76,7 @@ func GetFunc(name string) []func() {
 		myfunc.FuncSample007,
 		myfunc.FuncSample008,
 		myfunc.FuncSample009,
+		myfunc.FuncSample010,
 	}
 	goroutinefunc := []func(){
 		mygoroutine.GoroutineSample001,
@@ -108,6 +109,8 @@ func GetFunc(name string) []func() {
 		mymap.MapSample002,
 		mymap.MapSample003,
 		mymap.MapSample004,
+		mymap.MapSample005,
+		mymap.MapSample006,
 	}
 	osfunc := []func(){
 		myos.OsSample001,

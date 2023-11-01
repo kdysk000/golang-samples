@@ -25,6 +25,7 @@ func ErrorsSample002() {
 
 	fmt.Println(err)
 	fmt.Println(WrappedErr)
+	fmt.Println(errors.Unwrap(WrappedErr))
 }
 
 /*
@@ -32,5 +33,6 @@ func ErrorsSample002() {
   -------
   err1
   Wrapped err1
+  err1
   -------
 */

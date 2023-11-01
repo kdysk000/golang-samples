@@ -19,9 +19,9 @@ func MapSample001() {
 
 	// mapの定義と初期化
 	m := map[string]int{
-		"apple" : 1,
-		"orange": 2,
-		"banana": 3,
+		"foo": 1,
+		"bar": 2,
+		"baz": 3,
 	}
 
 	fmt.Println(m)
@@ -30,6 +30,6 @@ func MapSample001() {
 /*
   実行結果
   -------
-  map[apple:1 banana:3 orange:2]
+  map[bar:2 baz:3 foo:1]
   -------
 */

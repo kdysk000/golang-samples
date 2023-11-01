@@ -13,7 +13,7 @@ import (
 	例
 	　a[0:2]  index0～index1
 	  a[1:]   index1～最後まで
-	  a[:5]   最初～index4
+	  a[:5]   index0～index4
 */
 func ArraySample008() {
 	fmt.Println("array_sample_008")

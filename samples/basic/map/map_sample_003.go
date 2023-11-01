@@ -5,20 +5,22 @@ import (
 )
 
 /*
-	mapの要素を削除する(delete)
+	make()を用いたmapの作成
+
+	書式
+	  変数名 := make(map[key]データ型, キャパシティ)
+
+	  型は必須、キャパシティは任意
 */
 func MapSample003() {
 	fmt.Println("map_sample_003")
 
-	m := map[string]int{
-		"apple" : 1,
-		"orange": 2,
-		"banana": 3,
-	}
+	// mapの定義と初期化
+	m := make(map[string]int)
 
-	fmt.Println(m)
-
-	delete(m, "banana")
+	m["foo"] = 1
+	m["bar"] = 2
+	m["baz"] = 3
 
 	fmt.Println(m)
 }
@@ -26,7 +28,6 @@ func MapSample003() {
 /*
   実行結果
   -------
-  map[apple:1 banana:3 orange:2]
-  map[apple:1 orange:2]
+  map[bar:2 baz:3 foo:1]
   -------
 */

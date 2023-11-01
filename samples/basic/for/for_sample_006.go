@@ -21,14 +21,25 @@ func ForSample006() {
 	for i, v := range values {
 		fmt.Printf("index: %d, value: %d, address: %p\n", i, v, &v)
 	}
+
+	// 回避方法
+	// loop内で新しい変数に代入する
+	for i, v := range values {
+		v := v
+		fmt.Printf("index: %d, value: %d, address: %p\n", i, v, &v)
+	}
 }
 
 /*
   実行結果
   -------
-  index: 0, value: 0, address: 0xc0000180e0
-  index: 1, value: 2, address: 0xc0000180e0
-  index: 2, value: 4, address: 0xc0000180e0
-  index: 3, value: 6, address: 0xc0000180e0
+  index: 0, value: 0, address: 0xc0000b8030
+  index: 1, value: 2, address: 0xc0000b8030
+  index: 2, value: 4, address: 0xc0000b8030
+  index: 3, value: 6, address: 0xc0000b8030
+  index: 0, value: 0, address: 0xc0000b8038
+  index: 1, value: 2, address: 0xc0000b8040
+  index: 2, value: 4, address: 0xc0000b8048
+  index: 3, value: 6, address: 0xc0000b8050
   -------
 */

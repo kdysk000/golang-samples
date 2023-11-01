@@ -5,36 +5,34 @@ import (
 )
 
 /*
-	mapのキーの存在チェック
+	mapに要素を追加
 
 	書式
-	  値, キーの存在有無(bool) := マップ変数[キー]
+	  変数名[キー] = 値
+
+	・存在するキーの場合は値が更新される
+	・存在しないキーの場合は追加となる
 */
 func MapSample004() {
 	fmt.Println("map_sample_004")
 
 	m := map[string]int{
-		"apple" : 1,
-		"orange": 2,
+		"foo": 1,
+		"bar": 2,
 	}
 
-	if num1, ok1 := m["apple"]; ok1 {
-		fmt.Println("apple is exist. num:", num1)
-	}else{
-		fmt.Println("apple is not exist.")
-	}
-	
-	if num2, ok2 := m["banana"]; ok2 {
-		fmt.Println("banana is exist. num:", num2)
-	}else{
-		fmt.Println("banana is not exist.")
-	}
+	fmt.Println(m)
+
+	m["foo"] = 0  // 存在するキーなので更新
+	m["baz"] = 3  // 存在しないキーなので追加
+
+	fmt.Println(m)
 }
 
 /*
   実行結果
   -------
-  apple is exist. num: 1
-  banana is not exist.
+  map[bar:2 foo:1]
+  map[bar:2 baz:3 foo:0]
   -------
 */

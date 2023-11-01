@@ -7,3 +7,4 @@
 7. [即時関数](./func_sample_007.go)
 8. [関数を引数にとる関数](./func_sample_008.go)
 9. [関数を戻り値として返す関数](./func_sample_009.go)
+10. [値渡しと参照渡し](./func_sample_010.go)
