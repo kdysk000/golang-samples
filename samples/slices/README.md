@@ -1,3 +1,7 @@
+## slicesパッケージ
+
+スライス操作の機能を提供するパッケージ
+
 1. [スライス要素の検索(BinarySearch)](./slices_sample_001.go)
 2. [スライス要素の検索(BinarySearchFunc)](./slices_sample_002.go)
 3. [スライスの空いているCapacity を削除する(Clip)](./slices_sample_003.go)
