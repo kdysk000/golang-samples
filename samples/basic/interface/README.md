@@ -1,3 +1,5 @@
+## インターフェース(interface)
+
 1. [インターフェース(Interface)の定義](./interface_sample_001.go)
 2. [interface{}型](./interface_sample_002.go)
 3. [interface{} 型の変数を他の型に変換する](./interface_sample_003.go)
