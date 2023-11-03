@@ -7,7 +7,7 @@ import (
 )
 
 /*
-    ファイル名の変更と移動(Rename)
+	ファイル名の変更と移動(Rename)
 
 	func Rename(oldpath, newpath string) error
 	  param:

@@ -7,7 +7,7 @@ import (
 )
 
 /*
-    ホスト名の取得(Hostname)
+	ホスト名の取得(Hostname)
 
 	func Hostname() (name string, err error)
 	  return:

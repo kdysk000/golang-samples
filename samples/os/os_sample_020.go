@@ -10,8 +10,8 @@ import (
 
 	func Setenv(key, value string) error
 	  param:
-	    key　 : 環境変数名
-	    value : 環境変数の値
+	    key　: 環境変数名
+	    value: 環境変数の値
 	  return:
 	    error: エラー
 */

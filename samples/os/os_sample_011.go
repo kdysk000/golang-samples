@@ -7,7 +7,7 @@ import (
 )
 
 /*
-    ファイルの書き込み(WriteFile)
+	ファイルの書き込み(WriteFile)
 
 	func WriteFile(name string, data []byte, perm FileMode) error
 	  param:
