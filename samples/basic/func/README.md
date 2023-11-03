@@ -1,3 +1,5 @@
+## 関数(func)
+
 1. [関数の定義(func)](./func_sample_001.go)
 2. [複数戻り値の関数の定義](./func_sample_002.go)
 3. [可変引数の関数の定義](./func_sample_003.go)
