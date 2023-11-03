@@ -1,3 +1,7 @@
+## stringsパッケージ
+
+文字列操作の機能を提供するパッケージ
+
 1. [文字列を比較する(Compare)](./strings_sample_001.go)
 2. [指定の文字列を含んでいるか(Contains)](./strings_sample_002.go)
 3. [指定の文字列に含まれるUnicodeコードポイントのいずれかが含まれているか(ContainsAny)](./strings_sample_003.go)
