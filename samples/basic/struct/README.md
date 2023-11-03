@@ -1,3 +1,5 @@
+## 構造体(struct)
+
 1. [構造体の定義](./struct_sample_001.go)
 2. [構造体メンバのpublicとprivate](./struct_sample_002.go)
 3. [構造体のメソッド](./struct_sample_003.go)
