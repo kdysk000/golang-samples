@@ -22,7 +22,7 @@ import (
 func OsSample016() {
 	fmt.Println("os_sample_016")
 
-	if ret := IsExists("./data/os/link.txt"); ret == false {
+	if ret := IsExists("./data/os/link.txt"); !ret {
 		err := os.Symlink("./test.txt", "./data/os/link.txt")
 		if err != nil {
 			log.Fatal(err)
