@@ -1,3 +1,7 @@
+## encoding/jsonパッケージ
+
+JSONエンコーディングを処理するエンコーダ、デコーダ機能を提供するパッケージ
+
 1. [Goオブジェクト(構造体)をJSON形式の文字列データに変換(Marshal)](./json_sample_001.go)
 2. [JSON形式の文字列データ([]byte)をGoのオブジェクトに変換する(Unmarshal)](./json_sample_002.go)
 3. [Goオブジェクト(構造体)をJSONファイルに出力する(NewEncoder、Encode)](./json_sample_003.go)
