@@ -12,8 +12,6 @@
 12. [ファイル、ディレクトリの削除(Remove)](./os_sample_012.go)
 13. [ファイル名の変更と移動(Rename)](./os_sample_013.go)
 14. [ファイルの存在確認(stat、IsNotExist)](./os_sample_014.go)
-
-
 15. [シンボリックリンクの作成(Symlink)](./os_sample_014.go)
 16. [シンボリックリンクのリンク先を読み込む(Readlink)](./os_sample_015.go)
 17. [ホスト名の取得(Hostname)](./os_sample_016.go)
