@@ -7,7 +7,7 @@ import (
 )
 
 /*
-    ファイルの書き込み(Write、WriteAt)
+	ファイルの書き込み(Write、WriteAt)
 
 	func (f *File) Write(b []byte) (n int, err error)
 	  概要:

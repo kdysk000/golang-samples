@@ -7,7 +7,7 @@ import (
 )
 
 /*
-    ファイルの読み込み(ReadFile)
+	ファイルの読み込み(ReadFile)
 
 	func ReadFile(name string) ([]byte, error)
 	  param:

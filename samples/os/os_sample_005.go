@@ -7,7 +7,7 @@ import (
 )
 
 /*
-    テンポラリディレクトリの作成(MkdirTemp)
+	テンポラリディレクトリの作成(MkdirTemp)
 
 	func MkdirTemp(dir string, pattern string) (string, error)
 	  param:

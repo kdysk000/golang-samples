@@ -7,7 +7,7 @@ import (
 )
 
 /*
-    シンボリックリンクの作成(Symlink)
+	シンボリックリンクの作成(Symlink)
 
 	func Symlink(oldname, newname string) error
 	  param:

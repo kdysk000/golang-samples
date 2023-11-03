@@ -8,7 +8,7 @@ import (
 )
 
 /*
-    ファイルの読み込み(Read、ReadAt)
+	ファイルの読み込み(Read、ReadAt)
 
 	func (f *File) Read(b []byte) (n int, err error)
 	  概要：

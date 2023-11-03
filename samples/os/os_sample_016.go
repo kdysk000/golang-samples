@@ -7,7 +7,7 @@ import (
 )
 
 /*
-    シンボリックリンクのリンク先を読み込む(Readlink)
+	シンボリックリンクのリンク先を読み込む(Readlink)
 
 	func Readlink(name string) (string, error)
 	  param:
