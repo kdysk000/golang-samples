@@ -1,3 +1,7 @@
+## timeパッケージ
+
+日付や時間を取り扱うための機能を提供するパッケージ
+
 1. [現在時刻を取得する(time.Now)](./time_sample_001.go)
 2. [時刻オブジェクトを作成する(time.Date)](./time_sample_002.go)
 3. [Timeオブジェクトから日時を取得する(Date、Year、Month、Day、Yearday、Weekday)](./time_sample_003.go)
