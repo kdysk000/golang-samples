@@ -6,7 +6,7 @@ import (
 )
 
 /*
-	ファイルの存在確認(stat、IsNotExist)
+	ファイルの存在確認(stat)
 
 	stat() の戻り値の err が nil なら存在すると判定できる
 
