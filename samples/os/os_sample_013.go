@@ -7,28 +7,34 @@ import (
 )
 
 /*
-    ファイルの書き込み(WriteFile)
+    ファイル名の変更と移動(Rename)
 
-	func WriteFile(name string, data []byte, perm FileMode) error
+	func Rename(oldpath, newpath string) error
 	  param:
-	    name : ファイルパス
-	    data : ファイルに書き込むデータを格納したbyte型のスライス
-	    perm : パーミッション
+	    oldpath: 変更元のファイルパス
+	    newpath: 変更後のファイルパス
 	  return:
-	    error: エラー
-	  注：
-	    ファイルが既に存在している場合、中身を空にしてデータを書き込む。
-	    ファイルが存在していなかった場合はファイルを作成する。
+	    error  : エラー
+
+	第1引数と第2引数でファイル名を除くパスが一致すればリネーム、パスが異なれば移動
 */
 func OsSample013() {
 	fmt.Println("os_sample_013")
 
-	str := "write this file by Golang!"
-	data := []byte(str)
-	err := os.WriteFile("data/os/test.txt", data, 0755)
+	//ファイル作成
+	fp, err := os.Create("data/os/before.txt")
 	if err != nil {
 		log.Fatal(err)
+		os.Exit(1)
+	}
+	fp.Close()
+
+	//リネーム
+	err = os.Rename("data/os/before.txt", "data/os/after.txt")
+	if err != nil {
+		log.Fatal(err)
+		os.Exit(1)
 	}
 
-	fmt.Printf("Write file success.")
+	fmt.Println("file rename success.")
 }

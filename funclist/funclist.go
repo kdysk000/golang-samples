@@ -127,6 +127,14 @@ func GetFunc(name string) []func() {
 		myos.OsSample012,
 		myos.OsSample013,
 		myos.OsSample014,
+		myos.OsSample015,
+		myos.OsSample016,
+		myos.OsSample017,
+		myos.OsSample018,
+		myos.OsSample019,
+		myos.OsSample020,
+		myos.OsSample021,
+		myos.OsSample022,
 	}
 	slicefunc := []func(){
 		myslice.SliceSample001,

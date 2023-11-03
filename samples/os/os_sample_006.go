@@ -7,21 +7,41 @@ import (
 )
 
 /*
-	ディレクトの作成(Mkdir)
+    ファイルを開く(Open)、ファイルを閉じる(Close)
 
-	func Mkdir(name string, perm FileMode) error
+	func Open(name string) (*File, error)
 	  param:
-	    name : 作成するディレクトリ名を含んだパス
-	    perm : パーミッション
+	    name: ファイル名
+	  return:
+	    *File: ファイルオブジェクト
+	    error: エラー
+	  注：
+	    Open()は読み込み専用、書き込みする場合はCreate()を使う
+
+	func (f *File) Close() error
+	  param:
+	    なし
 	  return:
 	    error: エラー
 */
 func OsSample006() {
 	fmt.Println("os_sample_006")
 
-	// ディレクトリ作成
-	err := os.Mkdir("data/os/testdir", 0755)
+	f, err := os.Open("data/os/test.txt")
 	if err != nil {
 		log.Fatal(err)
+		os.Exit(1)
 	}
+	defer f.Close()
+
+	fmt.Println("file open success.")
+	fmt.Println(f.Name())
 }
+
+/*
+  実行結果
+  -------
+  file open success.
+  data/os/test.txt
+  -------
+*/

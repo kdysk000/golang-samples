@@ -2,28 +2,42 @@ package os
 
 import (
 	"fmt"
-	"log"
 	"os"
 )
 
 /*
-	ファイル、ディレクトリの削除(Remove)
+    ファイルの存在確認(stat、IsNotExist)
 
-	func Remove(name string) error
+	stat() の戻り値の err が nil なら存在すると判定できる
+
+	func Stat(name string) (FileInfo, error)
 	  param:
-	    name : ファイルパス
+	    name    : ファイルパス
 	  return:
-	    error: エラー
-	  注：
-	    ディレクトリは空ディレクトリのみ削除可能
+	    FileInfo: ファイル情報
+	    error   : エラー
 */
+func IsExists(filename string) bool {
+    _, err := os.Stat(filename)
+    return err == nil
+}
+
 func OsSample014() {
 	fmt.Println("os_sample_014")
 
-	err := os.Remove("data/os/testdir")
-	if err != nil {
-		log.Fatal(err)
-	}
+	//存在するファイル
+    ret := IsExists("./data/os/test.txt")
+	fmt.Println("ret:", ret)
 
-	fmt.Println("Remove file success.")
+	//存在しないファイル
+    ret = IsExists("./data/os/unknown.txt")
+	fmt.Println("ret:", ret)
 }
+
+/*
+  実行結果
+  -------
+  ret: true
+  ret: false
+  -------
+*/

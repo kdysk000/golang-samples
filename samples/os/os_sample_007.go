@@ -7,31 +7,27 @@ import (
 )
 
 /*
-    テンポラリディレクトリの作成(MkdirTemp)
+    書き込み用にファイルを開く(Create)
 
-	func MkdirTemp(dir string, pattern string) (string, error)
+	func Create(name string) (*File, error)
 	  param:
-	    dir    : ディレクトリの作成場所
-	    pattern: 作成するディレクトリ名の先頭部分
+	    name: ファイル名
 	  return:
-	    string : 作成したディレクトを含めたパス
-	    error  : エラー
+	    *File: ファイルオブジェクト
+	    error: エラー
+	  注：
+	    Create()関数は、ファイルが既に存在している場合、中身を空にして開く。
+	    ファイルが存在していなかった場合はファイルを作成する。
 */
 func OsSample007() {
 	fmt.Println("os_sample_007")
 
-	// テンポラリディレクトリ作成
-	dir, err := os.MkdirTemp("data/os", "sample")
+	fp, err := os.Create("data/os/test.txt")
 	if err != nil {
 		log.Fatal(err)
+		os.Exit(1)
 	}
+	defer fp.Close()
 
-	fmt.Println("dir:", dir)
+	fmt.Println("file create success.")
 }
-
-/*
-  実行結果
-  -------
-  dir: data/os/sample2547357272
-  -------
-*/

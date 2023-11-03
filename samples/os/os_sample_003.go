@@ -2,21 +2,26 @@ package os
 
 import (
 	"fmt"
+	"log"
 	"os"
 )
 
 /*
-	環境変数の取得(Getenv)
+	ディレクトの作成(Mkdir)
 
-	func Getenv(key string) string
+	func Mkdir(name string, perm FileMode) error
 	  param:
-	    key　 : 環境変数名
+	    name : 作成するディレクトリ名を含んだパス
+	    perm : パーミッション
 	  return:
-	    string: 環境変数の値
+	    error: エラー
 */
 func OsSample003() {
 	fmt.Println("os_sample_003")
 
-	// カレントディレクトのパスを取得
-	fmt.Println("Environment(HOME):", os.Getenv("HOME"))
+	// ディレクトリ作成
+	err := os.Mkdir("data/os/testdir1", 0755)
+	if err != nil {
+		log.Fatal(err)
+	}
 }
