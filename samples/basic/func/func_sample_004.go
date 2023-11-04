@@ -13,8 +13,8 @@ func FuncSample004() {
 	fmt.Println("func_sample_004")
 
 	//減算結果は破棄
-	add1, _ := addMinus(5, 2)
-	fmt.Println(add1)
+	add, _ := addMinus(5, 2)
+	fmt.Println(add)
 }
 
 /*

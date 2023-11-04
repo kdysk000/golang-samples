@@ -18,12 +18,8 @@ import (
 func FuncSample002() {
 	fmt.Println("func_sample_002")
 
-	add1, minus1 := addMinus(5, 2)
-	fmt.Println(add1, minus1)
-
-	// 不要な戻り値の場合は _ を使用する
-	add2, _ := addMinus(5, 3)
-	fmt.Println(add2)
+	add, minus := addMinus(5, 2)
+	fmt.Println(add, minus)
 }
 
 func addMinus(x int, y int) (int, int) {
