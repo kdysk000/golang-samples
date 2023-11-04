@@ -30,6 +30,5 @@ func addMinus(x int, y int) (int, int) {
   実行結果
   -------
   7 3
-  8
   -------
 */
