@@ -103,6 +103,10 @@ func GetFunc(name string) []func() {
 	}
 	logfunc := []func(){
 		mylog.LogSample001,
+		mylog.LogSample002,
+		mylog.LogSample003,
+		mylog.LogSample004,
+		mylog.LogSample005,
 	}
 	mapfunc := []func(){
 		mymap.MapSample001,
