@@ -6,29 +6,18 @@ import (
 )
 
 /*
-	経過時間の算出(Since、Seconds)
+	指定の時間停止させる(Sleep)
 
-	書式
-	  (time.Since(startTime)).Seconds()
+	func Sleep(d Duration)
+	  param:
+	    d: 停止させる時間
+	  return:
+	    なし
 */
 func TimeSample018() {
 	fmt.Println("time_sample_018")
 
-	t1 := time.Now()
-	t2 := t1.Add(time.Second * -1)  //現在時刻から1秒前
-
-	sub := (time.Since(t2)).Seconds()
-
-	fmt.Println(t1)
-	fmt.Println(t2)
-	fmt.Println(sub)
+	fmt.Println(time.Now())
+	time.Sleep(time.Second * 1)
+	fmt.Println(time.Now())
 }
-
-/*
-  実行結果
-  -------
-  2023-10-21 23:03:33.4817276 +0900 JST m=+0.000101701
-  2023-10-21 23:03:32.4817276 +0900 JST m=-0.999898299
-  1.0000004
-  -------
-*/

@@ -6,7 +6,7 @@ import (
 )
 
 /*
-	時刻オブジェクトを文字列に変換する(String)
+	TImeオブジェクトを文字列に変換する(String)
 
 	func (t Time) String() string
 	  param:

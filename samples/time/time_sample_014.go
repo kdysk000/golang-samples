@@ -6,35 +6,29 @@ import (
 )
 
 /*
-	日時の差分を求める(Since)
-
-	func Since(t Time) Duration
-	  概要
-	    現在日時と引数で指定された日時の差分を求める
-		Sub()と違って開始時点のTImeオブジェクトだけで実行できる
-	  param:
-	    t       : Timeオブジェクト
-	  return:
-	    Duration: 差分結果
+	月初、月末を求める(Date、AddDate)
 */
 func TimeSample014() {
 	fmt.Println("time_sample_014")
 
-	t1 := time.Now()
-	t2 := t1.Add(time.Second * -1)  //現在時刻から1秒前
+	t1 := time.Date(2001, 1, 15, 23, 59, 59, 0, time.UTC)
 
-	sub := time.Since(t2)
+	// 月初
+	t2 := time.Date(t1.Year(), t1.Month(), 1, 0, 0, 0, 0, time.UTC)
+
+	// 月末(月初 + 1month - 1day)
+	t3 := t2.AddDate(0, 1, -1)
 
 	fmt.Println(t1)
 	fmt.Println(t2)
-	fmt.Println(sub)
+	fmt.Println(t3)
 }
 
 /*
   実行結果
   -------
-  2023-10-21 22:49:43.8646511 +0900 JST m=+0.000097401
-  2023-10-21 22:49:42.8646511 +0900 JST m=-0.999902599
-  1.0000003s
+  2001-01-15 23:59:59 +0000 UTC
+  2001-01-01 00:00:00 +0000 UTC
+  2001-01-31 00:00:00 +0000 UTC
   -------
 */

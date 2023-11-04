@@ -6,27 +6,28 @@ import (
 )
 
 /*
-	タイムゾーンの変更(In)
+	時刻をUTCに変換する(UTC)
 
-	func (t Time) In(loc *Location) Time
+	func (t Time) UTC() Time
 	  param:
-	    loc : タイムゾーン
+	    なし
 	  return:
 	    Time: Timeオブジェクト
 */
 func TimeSample009() {
 	fmt.Println("time_sample_009")
 
-	t1 := time.Unix(0,0)
-	t2 := t1.In(time.UTC)
-    fmt.Println(t1)
-	fmt.Println(t2)
+	t := time.Date(2001, 1, 1, 23, 59, 59, 0, time.Local)
+	fmt.Println(t)
+
+	utc := t.UTC()
+    fmt.Println(utc)
 }
 
 /*
   実行結果
   -------
-  1970-01-01 09:00:00 +0900 JST
-  1970-01-01 00:00:00 +0000 UTC
+  2001-01-01 23:59:59 +0900 JST
+  2001-01-01 14:59:59 +0000 UTC
   -------
 */

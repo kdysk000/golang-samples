@@ -6,7 +6,7 @@ import (
 )
 
 /*
-	時刻オブジェクトを作成する(time.Date)
+	Timeオブジェクトを作成する(time.Date)
 
 	func Date(year int, month Month, day, hour, min, sec, nsec int, loc *Location) Time
 	  param:

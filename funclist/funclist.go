@@ -235,6 +235,10 @@ func GetFunc(name string) []func() {
 		mytime.TimeSample016,
 		mytime.TimeSample017,
 		mytime.TimeSample018,
+		mytime.TimeSample019,
+		mytime.TimeSample020,
+		mytime.TimeSample021,
+		mytime.TimeSample022,
 	}
 
 	switch name {

@@ -6,42 +6,32 @@ import (
 )
 
 /*
-	日時の比較(Equal、After、Before)
+	日時の差分を求める(Sub)
 
-	func (t Time) Equal(u Time) bool
+	func (t Time) Sub(u Time) Duration
 	  param:
-	    u   : 比較するTimeオブジェクト
+	    u       : 差分を求めたいTimeオブジェクト
 	  return:
-	    bool: 比較結果
-
-	func (t Time) After(u Time) bool
-	  param:
-	    u   : 比較するTimeオブジェクト
-	  return:
-	    bool: 比較結果(uよりも後の日時ならtrue)
-
-	func (t Time) Before(u Time) bool
-	  param:
-	    u   : 比較するTimeオブジェクト
-	  return:
-	    bool: 比較結果(uよりも前の日時ならtrue)
+	    Duration: 差分結果
 */
 func TimeSample015() {
 	fmt.Println("time_sample_015")
 
 	t1 := time.Date(2001, 1, 1, 23, 59, 59, 0, time.UTC)
-	t2 := time.Date(2001, 1, 1, 23, 59, 58, 0, time.UTC)
+	t2 := time.Date(2001, 1, 15, 23, 59, 59, 0, time.UTC)
 
-	fmt.Println(t1.Equal(t2))
-	fmt.Println(t1.After(t2))
-	fmt.Println(t1.Before(t2))
+	sub := t2.Sub(t1)
+
+	fmt.Println(t1)
+	fmt.Println(t2)
+	fmt.Println(sub)
 }
 
 /*
   実行結果
   -------
-  false
-  true
-  false
+  2001-01-01 23:59:59 +0000 UTC
+  2001-01-15 23:59:59 +0000 UTC
+  336h0m0s
   -------
 */
