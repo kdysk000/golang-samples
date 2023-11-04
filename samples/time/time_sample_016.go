@@ -11,7 +11,7 @@ import (
 	func Since(t Time) Duration
 	  概要
 	    現在日時と引数で指定された日時の差分を求める
-		Sub()と違って開始時点のTImeオブジェクトだけで実行できる
+	    Sub()と違って開始時点のTImeオブジェクトだけで実行できる
 	  param:
 	    t       : Timeオブジェクト
 	  return:

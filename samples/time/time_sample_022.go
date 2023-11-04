@@ -6,11 +6,11 @@ import (
 )
 
 /*
-	指定時間ごとに現在時刻を通知する(Tick)
+	指定時間後に一度だけ現在時刻を通知する(After)
 
-	指定した時間間隔ごとに現在時刻を表すtime.Time型の値が送信されるチャネルを生成する
+	指定した時間後に現在時刻を表すtime.Time型の値が送信されるチャネルを生成する
 
-	func Tick(d Duration) <-chan Time
+	func After(d Duration) <-chan Time
 	  param:
 	    d          : 通知の時間間隔
 	  return:
