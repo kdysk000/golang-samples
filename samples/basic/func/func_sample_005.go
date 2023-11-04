@@ -5,27 +5,30 @@ import (
 )
 
 /*
-	関数タイプ変数
+	可変引数の関数の定義
 
-	関数も変数で持つことができる
+	... を用いることで可変引数にすることができる
 */
 func FuncSample005() {
 	fmt.Println("func_sample_005")
 
-	var f func(int) int = testFunc1
-	num := f(5)
-	fmt.Println(num)
+	fmt.Println(add(1, 2))
+	fmt.Println(add(1, 2, 3))
+	fmt.Println(add(1, 2, 3, 4))
 }
 
-func testFunc1(x int) int {
-	fmt.Println("This is testFunc1")
+func add(x int, y ... int) int {
+	for _, num := range y {
+		x += num
+	}
 	return x
 }
 
 /*
   実行結果
   -------
-  This is testFunc1
-  5
+  3
+  6
+  10
   -------
 */

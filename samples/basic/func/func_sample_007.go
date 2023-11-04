@@ -5,30 +5,27 @@ import (
 )
 
 /*
-	即時関数
+	関数タイプ変数
 
-	定義と同時に関数を実行する
+	関数も変数で持つことができる
 */
 func FuncSample007() {
 	fmt.Println("func_sample_007")
 
-	greeting := func(country string) string {
-		switch country {
-		case "Japan":
-			return "こんにちは"
-		case "America":
-			return "Hello"
-		default:
-			return "xxxxx"
-		}
-	}("Japan")
+	var f func(int) int = testFunc1
+	num := f(5)
+	fmt.Println(num)
+}
 
-	fmt.Println(greeting)
+func testFunc1(x int) int {
+	fmt.Println("This is testFunc1")
+	return x
 }
 
 /*
   実行結果
   -------
-  こんにちは
+  This is testFunc1
+  5
   -------
 */

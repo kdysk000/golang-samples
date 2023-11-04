@@ -5,30 +5,29 @@ import (
 )
 
 /*
-	可変引数の関数の定義
+	戻り値なしの関数の定義
 
-	... を用いることで可変引数にすることができる
+	戻り値の定義を省略すれば戻り値なしとなる
+
+	書式：
+	  func 関数名 (引数 型) {
+	  	// do something
+	  	return 値
+	  }
 */
 func FuncSample003() {
 	fmt.Println("func_sample_003")
 
-	fmt.Println(add(1, 2))
-	fmt.Println(add(1, 2, 3))
-	fmt.Println(add(1, 2, 3, 4))
+	printNum(10)
 }
 
-func add(x int, y ... int) int {
-	for _, num := range y {
-		x += num
-	}
-	return x
+func printNum(x int) {
+	fmt.Println(x)
 }
 
 /*
   実行結果
   -------
-  3
-  6
   10
   -------
 */

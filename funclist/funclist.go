@@ -77,6 +77,8 @@ func GetFunc(name string) []func() {
 		myfunc.FuncSample008,
 		myfunc.FuncSample009,
 		myfunc.FuncSample010,
+		myfunc.FuncSample011,
+		myfunc.FuncSample012,
 	}
 	goroutinefunc := []func(){
 		mygoroutine.GoroutineSample001,

@@ -5,28 +5,30 @@ import (
 )
 
 /*
-	関数を戻り値として返す関数
+	即時関数
+
+	定義と同時に関数を実行する
 */
 func FuncSample009() {
 	fmt.Println("func_sample_009")
 
-	f := testFunc3()
-	fmt.Println(f(5))
-}
+	greeting := func(country string) string {
+		switch country {
+		case "Japan":
+			return "こんにちは"
+		case "America":
+			return "Hello"
+		default:
+			return "xxxxx"
+		}
+	}("Japan")
 
-func testFunc3() func(int) int {
-	fmt.Println("This is testFunc3")
-
-	f := func(x int) int {
-		return x
-	}
-	return f
+	fmt.Println(greeting)
 }
 
 /*
   実行結果
   -------
-  This is testFunc3
-  5
+  こんにちは
   -------
 */

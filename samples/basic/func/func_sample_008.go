@@ -5,25 +5,23 @@ import (
 )
 
 /*
-	関数を引数にとる関数
+	関数リテラル(無名関数)
 */
 func FuncSample008() {
 	fmt.Println("func_sample_008")
 
-	num := testFunc2(testFunc1)
+	f := func(n1 int) int {
+		fmt.Println("This is testFunc")
+		return n1
+	}
+	num := f(5)
 	fmt.Println(num)
-}
-
-func testFunc2(f func(int) int) int {
-	fmt.Println("This is testFunc2")
-	return f(5)
 }
 
 /*
   実行結果
   -------
-  This is testFunc2
-  This is testFunc1
+  This is testFunc
   5
   -------
 */
