@@ -1,0 +1,9 @@
+Go言語のサンプルプログラム
+
+## golang-samples
+
+### goenvのインストール
+```
+git clone https://github.com/syndbg/goenv.git ~/.goenv
+```
+
