@@ -12,6 +12,11 @@ golang-samples 直下で以下のコマンドを実行
 ```
 go run main.go [テストタイプ] [テスト番号]
 ```
+**実行例**
+```
+go run main.go array 001
+```
+
 **テストタイプ一覧**
 - [基本構文カテゴリ](./samples/basic)
   - array       ・・・  [配列](./samples/basic/array)
