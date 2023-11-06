@@ -18,7 +18,7 @@ import (
 func LogSample002() {
 	fmt.Println("log_sample_002")
 
-	f, err := os.Create("./data/log/test.log")
+	f, err := os.Create("./data/log/log.txt")
 	if err != nil {
 		log.Fatal(err)
 		os.Exit(1)

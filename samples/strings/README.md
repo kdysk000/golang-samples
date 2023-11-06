@@ -16,7 +16,7 @@
 12. [文字列中で検索文字列が最初に見つかる位置を返す(IndexAny)](./strings_sample_012.go)
 13. [文字列中で検索文字が最初に見つかる位置を返す(IndexByte)](./strings_sample_013.go)
 14. [文字列中で検索文字列が最後に見つかる位置を返す(LastIndex)](./strings_sample_014.go)
-15. [文字列中で検索文字列が最後に見つかる位置を返す(IndexAny)](./strings_sample_015.go)
+15. [文字列中で検索文字列が最後に見つかる位置を返す(LastIndexAny)](./strings_sample_015.go)
 16. [文字列中で検索文字が最後に見つかる位置を返す(LastIndexByte)](./strings_sample_016.go)
 17. [文字列の結合(Join)](./strings_sample_017.go)
 18. [文字列の置換(Replace)](./strings_sample_018.go)

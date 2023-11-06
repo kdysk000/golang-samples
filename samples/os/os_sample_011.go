@@ -30,5 +30,12 @@ func OsSample011() {
 		log.Fatal(err)
 	}
 
-	fmt.Printf("Write file success.")
+	fmt.Println("Write file success.")
 }
+
+/*
+  実行結果
+  -------
+  Write file success.
+  -------
+*/

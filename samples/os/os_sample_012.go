@@ -20,10 +20,24 @@ import (
 func OsSample012() {
 	fmt.Println("os_sample_012")
 
-	err := os.Remove("data/os/testdir")
+	// ディレクトリ作成
+	err := os.Mkdir("data/os/testdir", 0755)
 	if err != nil {
 		log.Fatal(err)
 	}
 
-	fmt.Println("Remove file success.")
+	// ディレクトリ削除
+	err = os.Remove("data/os/testdir")
+	if err != nil {
+		log.Fatal(err)
+	}
+
+	fmt.Println("Remove directory success.")
 }
+
+/*
+  実行結果
+  -------
+  Remove directory success.
+  -------
+*/

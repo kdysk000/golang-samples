@@ -6,7 +6,7 @@ import (
 )
 
 /*
-	文字列中で検索文字列が最後に見つかる位置を返す(IndexAny)
+	文字列中で検索文字列が最後に見つかる位置を返す(LastIndexAny)
 
 	LastIndexAny(s, chars string) int
 	  概要

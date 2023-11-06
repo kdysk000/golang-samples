@@ -21,7 +21,8 @@ import (
 */
 func funcB(ch chan string) {
 	time.Sleep(1 * time.Second)
-	ch <- "END"  // チャネルにメッセージを送信する
+	// チャネルにメッセージを送信する
+	ch <- "END"
 }
 
 func GoroutineSample002() {
