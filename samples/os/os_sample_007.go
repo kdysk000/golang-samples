@@ -22,7 +22,7 @@ import (
 func OsSample007() {
 	fmt.Println("os_sample_007")
 
-	fp, err := os.Create("data/os/test.txt")
+	fp, err := os.Create("data/os/test007.txt")
 	if err != nil {
 		log.Fatal(err)
 		os.Exit(1)
@@ -31,3 +31,10 @@ func OsSample007() {
 
 	fmt.Println("file create success.")
 }
+
+/*
+  実行結果
+  -------
+  file create success.
+  -------
+*/
