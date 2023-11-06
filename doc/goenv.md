@@ -24,3 +24,12 @@ goenv install <バージョン>
 goenv install -l
 ```
 
+- 使用するGoのバージョン切り替え
+```
+goenv global <バージョン>
+```
+- 特定のディレクトで使用するGoのバージョンを設定する場合
+```
+goenv local <バージョン>
+```
+
