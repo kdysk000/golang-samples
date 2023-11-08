@@ -20,7 +20,7 @@ import (
 	func (m *Mutex) TryLock() bool
 	  概要
 	    Lock()との違いはすでにロックされている場合、ブロックされない。
-		ロックできた場合はtrueが返り、ロックできなかった場合はfalseが返る。
+	    ロックできた場合はtrueが返り、ロックできなかった場合はfalseが返る。
 
 	func (m *Mutex) Unlock()
 	  概要：
