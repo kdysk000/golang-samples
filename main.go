@@ -35,6 +35,7 @@ func main() {
 	case "strings":
 	case "struct":
 	case "switch":
+	case "sync":
 	case "time":
 	default:
 		fmt.Printf("Invalid argument. (args[package]: %s)\n", os.Args[1])

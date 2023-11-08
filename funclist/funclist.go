@@ -20,6 +20,7 @@ import (
 	myslices "go-samples/samples/slices"
 	mystrconv "go-samples/samples/strconv"
 	mystrings "go-samples/samples/strings"
+	mysync "go-samples/samples/sync"
 	mytime "go-samples/samples/time"
 )
 
@@ -223,6 +224,10 @@ func GetFunc(name string) []func() {
 		myswitch.SwitchSample001,
 		myswitch.SwitchSample002,
 	}
+	syncfunc := []func(){
+		mysync.SyncSample001,
+		mysync.SyncSample002,
+	}
 	timefunc := []func(){
 		mytime.TimeSample001,
 		mytime.TimeSample002,
@@ -287,6 +292,8 @@ func GetFunc(name string) []func() {
 		return structfunc
 	case "switch":
 		return switchfunc
+	case "sync":
+		return syncfunc
 	case "time":
 		return timefunc
 	default:

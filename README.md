@@ -41,4 +41,5 @@ go run main.go array 001
   -  slices    ・・・  [slices](./samples/slices)
   -  strconv   ・・・  [strconv](./samples/strconv)
   -  strings   ・・・  [strings](./samples/strings)
+  -  sync      ・・・  [sync](./samples/sync)
   -  time      ・・・  [time](./samples/time)
