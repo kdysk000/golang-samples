@@ -12,6 +12,7 @@ import (
 	mystruct "go-samples/samples/basic/struct"
 	myswitch "go-samples/samples/basic/switch"
 	mycsv "go-samples/samples/csv"
+	myerrgroup "go-samples/samples/errgroup"
 	myerrors "go-samples/samples/errors"
 	myfilepath "go-samples/samples/filepath"
 	myjson "go-samples/samples/json"
@@ -41,6 +42,9 @@ func GetFunc(name string) []func() {
 		mycsv.CsvSample002,
 		mycsv.CsvSample003,
 		mycsv.CsvSample004,
+	}
+	errgroupfunc := []func(){
+		myerrgroup.ErrgroupSample001,
 	}
 	errorsfunc := []func(){
 		myerrors.ErrorsSample001,
@@ -259,6 +263,8 @@ func GetFunc(name string) []func() {
 		return arrayfunc
 	case "csv":
 		return csvfunc
+	case "errgroup":
+		return errgroupfunc
 	case "errors":
 		return errorsfunc
 	case "filepath":

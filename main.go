@@ -18,6 +18,7 @@ func main() {
 	case "array":
 	case "basic":
 	case "csv":
+	case "errgroup":
 	case "errors":
 	case "filepath":
 	case "for":

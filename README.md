@@ -33,6 +33,7 @@ go run main.go array 001
 
 - パッケージカテゴリ
   -  csv       ・・・  [encoding/csv](./samples/csv)
+  -  errgroup  ・・・  [errorgroup](./samples/errgroup)
   -  errors    ・・・  [errors](./samples/errors)
   -  filepath  ・・・  [filepath](./samples/filepath)
   -  json      ・・・  [encoding/json](./samples/json)
