@@ -227,6 +227,7 @@ func GetFunc(name string) []func() {
 	syncfunc := []func(){
 		mysync.SyncSample001,
 		mysync.SyncSample002,
+		mysync.SyncSample003,
 	}
 	timefunc := []func(){
 		mytime.TimeSample001,
