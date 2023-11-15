@@ -18,7 +18,7 @@ func TimeSample006() {
 	fmt.Println("time_sample_006")
 
 	t := time.Date(2001, 1, 1, 23, 59, 59, 0, time.UTC)
-    fmt.Println(t.String())
+	fmt.Println(t.String())
 }
 
 /*
