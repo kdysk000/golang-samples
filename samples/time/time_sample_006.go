@@ -6,7 +6,7 @@ import (
 )
 
 /*
-	TImeオブジェクトを文字列に変換する(String)
+	Timeオブジェクトを文字列に変換する(String)
 
 	func (t Time) String() string
 	  param:
@@ -17,20 +17,13 @@ import (
 func TimeSample006() {
 	fmt.Println("time_sample_006")
 
-	t := time.Now()
+	t := time.Date(2001, 1, 1, 23, 59, 59, 0, time.UTC)
     fmt.Println(t.String())
 }
 
 /*
   実行結果
   -------
-  2023-08-14 13:37:52.5743885 +0900 JST m=+0.000088401
-  2023
-  August
-  14
-  13
-  37
-  52
-  Monday
+  2001-01-01 23:59:59 +0000 UTC
   -------
 */
