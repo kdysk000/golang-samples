@@ -30,6 +30,7 @@ func main() {
 	case "log":
 	case "map":
 	case "os":
+	case "regexp":
 	case "slice":
 	case "slices":
 	case "strconv":

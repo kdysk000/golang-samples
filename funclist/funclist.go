@@ -18,6 +18,7 @@ import (
 	myjson "go-samples/samples/json"
 	mylog "go-samples/samples/log"
 	myos "go-samples/samples/os"
+	myregexp "go-samples/samples/regexp"
 	myslices "go-samples/samples/slices"
 	mystrconv "go-samples/samples/strconv"
 	mystrings "go-samples/samples/strings"
@@ -147,6 +148,12 @@ func GetFunc(name string) []func() {
 		myos.OsSample020,
 		myos.OsSample021,
 		myos.OsSample022,
+	}
+	regexpfunc := []func(){
+		myregexp.RegexpSample001,
+		myregexp.RegexpSample002,
+		myregexp.RegexpSample003,
+		myregexp.RegexpSample004,
 	}
 	slicefunc := []func(){
 		myslice.SliceSample001,
@@ -287,6 +294,8 @@ func GetFunc(name string) []func() {
 		return mapfunc
 	case "os":
 		return osfunc
+	case "regexp":
+		return regexpfunc
 	case "slice":
 		return slicefunc
 	case "slices":

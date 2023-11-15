@@ -39,6 +39,7 @@ go run main.go array 001
   -  json      ・・・  [encoding/json](./samples/json)
   -  log       ・・・  [log](./samples/log)
   -  os        ・・・  [os](./samples/os)
+  -  regexp    ・・・  [regexp](./samples/regexp)
   -  slices    ・・・  [slices](./samples/slices)
   -  strconv   ・・・  [strconv](./samples/strconv)
   -  strings   ・・・  [strings](./samples/strings)
