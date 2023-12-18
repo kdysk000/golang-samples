@@ -93,3 +93,19 @@ $ cat sample.json | gron | grep  name
 json.employees[0].name = "Alice";
 json.employees[1].name = "Bob";
 json.employees[2].name = "Carol";
+
+
+$ cat sample.json | gron | grep name | gron --ungron
+{
+  "employees": [
+    {
+      "name": "Alice"
+    },
+    {
+      "name": "Bob"
+    },
+    {
+      "name": "Carol"
+    }
+  ]
+}
