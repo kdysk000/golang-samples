@@ -15,6 +15,7 @@ import (
 	myerrgroup "go-samples/samples/errgroup"
 	myerrors "go-samples/samples/errors"
 	myfilepath "go-samples/samples/filepath"
+	mygorm "go-samples/samples/gorm"
 	myjson "go-samples/samples/json"
 	mylog "go-samples/samples/log"
 	myos "go-samples/samples/os"
@@ -86,6 +87,25 @@ func GetFunc(name string) []func() {
 		myfunc.FuncSample011,
 		myfunc.FuncSample012,
 		myfunc.FuncSample013,
+	}
+	gormfunc := []func(){
+		mygorm.GormSample001,
+		mygorm.GormSample002,
+		mygorm.GormSample003,
+		mygorm.GormSample004,
+		mygorm.GormSample005,
+		mygorm.GormSample006,
+		mygorm.GormSample007,
+		mygorm.GormSample008,
+		mygorm.GormSample009,
+		mygorm.GormSample010,
+		mygorm.GormSample011,
+		mygorm.GormSample012,
+		mygorm.GormSample013,
+		mygorm.GormSample014,
+		mygorm.GormSample015,
+		mygorm.GormSample016,
+		mygorm.GormSample017,
 	}
 	goroutinefunc := []func(){
 		mygoroutine.GoroutineSample001,
@@ -280,6 +300,8 @@ func GetFunc(name string) []func() {
 		return forfunc
 	case "func":
 		return funcfunc
+	case "gorm":
+		return gormfunc
 	case "goroutine":
 		return goroutinefunc
 	case "if":
