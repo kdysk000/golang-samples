@@ -17,7 +17,7 @@ func GormSample014() {
 	records := []Test001{}
 	ret := db.Where("id BETWEEN 0 AND 5").Find(&records)
 	if ret.Error != nil {
-			log.Fatal(ret.Error)
+		log.Fatal(ret.Error)
 	}
 	for _, record := range records {
 		fmt.Println("ID;", record.ID, "UserId:", record.UserId, "Name:", record.Name)

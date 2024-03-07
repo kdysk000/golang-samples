@@ -19,11 +19,11 @@ func GormSample004() {
 	id := uuid.New().String()
 	
 	ret := db.Omit("Name").Create(&Test001{
-        UserId: id,
-        Name: "hoge-"+id,  //このフィールドは登録されない
+		UserId: id,
+		Name: "hoge-"+id,  //このフィールドは登録されない
 	})
 	if ret.Error != nil {
-			log.Fatal(ret.Error)
+		log.Fatal(ret.Error)
 	}
 }
 

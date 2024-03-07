@@ -19,14 +19,14 @@ func GormSample017() {
 	//Preloadなしの場合関連テーブルの情報は取得できないので空
 	ret := db.First(&record)
 	if ret.Error != nil {
-			log.Fatal(ret.Error)
+		log.Fatal(ret.Error)
 	}
 	fmt.Println(record)
 
 	//Preloadで関連テーブルのレコードも取得
 	ret = db.Preload("Sub").First(&record)
 	if ret.Error != nil {
-			log.Fatal(ret.Error)
+		log.Fatal(ret.Error)
 	}
 	fmt.Println(record)
 }

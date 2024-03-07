@@ -18,7 +18,7 @@ func GormSample015() {
 	wr := Test001{Name: "hoge"}
 	ret := db.Where(&wr).Find(&record)
 	if ret.Error != nil {
-			log.Fatal(ret.Error)
+		log.Fatal(ret.Error)
 	}
 	fmt.Println(record)
 	fmt.Println("RowsAffected:", ret.RowsAffected)

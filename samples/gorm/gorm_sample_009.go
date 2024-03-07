@@ -17,7 +17,7 @@ func GormSample009() {
 	record := Test001{}
 	ret := db.Where("id = ?", 2).First(&record)
 	if ret.Error != nil {
-			log.Fatal(ret.Error)
+		log.Fatal(ret.Error)
 	}
 	fmt.Println(record)
 }

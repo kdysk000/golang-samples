@@ -19,7 +19,7 @@ func GormSample013() {
 	//Where()の中でOR句を使う
 	ret := db.Where("id = 1 OR id = 3").Find(&records)
 	if ret.Error != nil {
-			log.Fatal(ret.Error)
+		log.Fatal(ret.Error)
 	}
 	for _, record := range records {
 		fmt.Println("ID;", record.ID, "UserId:", record.UserId, "Name:", record.Name)
@@ -29,7 +29,7 @@ func GormSample013() {
 	//Or()メソッドを使う場合
 	ret = db.Where("id = 2").Or("id = 4").Find(&records)
 	if ret.Error != nil {
-			log.Fatal(ret.Error)
+		log.Fatal(ret.Error)
 	}
 	for _, record := range records {
 		fmt.Println("ID;", record.ID, "UserId:", record.UserId, "Name:", record.Name)
