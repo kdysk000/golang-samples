@@ -14,7 +14,7 @@ func GormSample017() {
 	db := DbInit()
 	AutoMigrate(tables002...)
 
-	record := Test002{}
+	record := Worker{}
 
 	//Preloadなしの場合関連テーブルの情報は取得できないので空
 	ret := db.First(&record)
@@ -24,7 +24,7 @@ func GormSample017() {
 	fmt.Println(record)
 
 	//Preloadで関連テーブルのレコードも取得
-	ret = db.Preload("Sub").First(&record)
+	ret = db.Preload("Job").First(&record)
 	if ret.Error != nil {
 		log.Fatal(ret.Error)
 	}

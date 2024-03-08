@@ -18,7 +18,7 @@ func GormSample005() {
 	db := DbInit()
 	AutoMigrate(tables001...)
 
-	record := Test001{}
+	record := User{}
 	ret := db.First(&record)
 	if ret.Error != nil {
 		log.Fatal(ret.Error)

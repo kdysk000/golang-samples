@@ -3,8 +3,6 @@ package gorm
 import (
 	"fmt"
 	"log"
-
-	"github.com/google/uuid"
 )
 
 /*
@@ -18,13 +16,12 @@ func GormSample002() {
 	db := DbInit()
 	AutoMigrate(tables001...)
 
-	records := []Test001{}
+	records := []User{}
 
 	for i := 0; i < 10; i++ {
-		id := uuid.New().String()
-		record := Test001{
-			UserId: id,
-			Name: "hoge-"+id,
+		record := User{
+			Name: RandomStr(7),
+			Age:  RandomInt(2),
 		}
 		records = append(records, record)
 	}

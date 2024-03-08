@@ -6,32 +6,32 @@ import (
 
 var (
 	tables001 = []interface{}{
-		&Test001{},
+		&User{},
 	}
 	tables002 = []interface{}{
-		&Test002{},
-		&Test002sub{},
+		&Worker{},
+		&Job{},
 	}
 )
 
-type Test001 struct {
-        gorm.Model
-        UserId  string `json:"userid"`
-        Name    string `json:"name"`
+type User struct {
+	gorm.Model
+	Name   string `json:"name"`
+	Age    int `json:"age"`
 }
 
 // Has One テーブル
-type Test002 struct {
+type Worker struct {
 	gorm.Model
-	UserId  string `json:"userid"`
-	Name    string `json:"name"`
-	Sub     Test002sub `json:"sub"`
+	Name   string `json:"name"`
+	Age    int `json:"age"`
+	Job    Job `json:"job"`
 }
 // Has One を定義する場合、外部キーフィールドも存在する必要がある
 // そのフィールドの名前は通常 Has One を持つモデルの型名に primary key を足したものとして作成される
-// ここでは Test002 + ID で Test002Id となる
-type Test002sub struct {
+// ここでは Worker + ID で WorkerId となる
+type Job struct {
 	gorm.Model
-	SubId      string `json:"userid"`
-	Test002ID  string `json:"test002id"`  //Test002の主キーがこのフィールドに保存される
+	Name      string `json:"jobid"`
+	WorkerID  string `json:"workerid"`  //Workerの主キーがこのフィールドに保存される
 }

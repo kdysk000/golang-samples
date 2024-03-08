@@ -106,6 +106,11 @@ func GetFunc(name string) []func() {
 		mygorm.GormSample015,
 		mygorm.GormSample016,
 		mygorm.GormSample017,
+		mygorm.GormSample018,
+		mygorm.GormSample019,
+		mygorm.GormSample020,
+		mygorm.GormSample021,
+		mygorm.GormSample022,
 	}
 	goroutinefunc := []func(){
 		mygoroutine.GoroutineSample001,

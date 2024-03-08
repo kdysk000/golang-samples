@@ -14,10 +14,10 @@ func GormSample015() {
 	db := DbInit()
 	AutoMigrate(tables001...)
 
-	record := Test001{}
+	record := User{}
 
 	//Struct
-	wr := Test001{Name: "hoge"}
+	wr := User{Name: "hoge"}
 	ret := db.Where(&wr).Find(&record)
 	if ret.Error != nil {
 		log.Fatal(ret.Error)

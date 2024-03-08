@@ -22,7 +22,7 @@ func GormSample018() {
 	id1 := uuid.New().String()
 	id2 := uuid.New().String()
 	
-	ret := db.Model(&Test001{}).Create([]map[string]interface{}{
+	ret := db.Model(&User{}).Create([]map[string]interface{}{
 		{"UserId": id1, "Name": "hoge-"+id1},
 		{"UserId": id2, "Name": "hoge-"+id2},
 	})

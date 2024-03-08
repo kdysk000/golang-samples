@@ -3,8 +3,6 @@ package gorm
 import (
 	"fmt"
 	"log"
-
-	"github.com/google/uuid"
 )
 
 /*
@@ -15,12 +13,10 @@ func GormSample001() {
 
 	db := DbInit()
 	AutoMigrate(tables001...)
-
-	id := uuid.New().String()
 	
-	ret := db.Create(&Test001{
-        UserId: id,
-        Name: "hoge",
+	ret := db.Create(&User{
+        Name: RandomStr(7),
+		Age:  RandomInt(2),
 	})
 	if ret.Error != nil {
 			log.Fatal(ret.Error)

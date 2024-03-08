@@ -14,7 +14,7 @@ func GormSample013() {
 	db := DbInit()
 	AutoMigrate(tables001...)
 
-	records := []Test001{}
+	records := []User{}
 
 	//Where()の中でOR句を使う
 	ret := db.Where("id = 1 OR id = 3").Find(&records)
@@ -22,7 +22,7 @@ func GormSample013() {
 		log.Fatal(ret.Error)
 	}
 	for _, record := range records {
-		fmt.Println("ID;", record.ID, "UserId:", record.UserId, "Name:", record.Name)
+		fmt.Println("ID;", record.ID, "Name:", record.Name, "Age:", record.Age)
 	}
 	fmt.Println("RowsAffected:", ret.RowsAffected)
 
@@ -32,7 +32,7 @@ func GormSample013() {
 		log.Fatal(ret.Error)
 	}
 	for _, record := range records {
-		fmt.Println("ID;", record.ID, "UserId:", record.UserId, "Name:", record.Name)
+		fmt.Println("ID;", record.ID, "Name:", record.Name, "Age:", record.Age)
 	}
 	fmt.Println("RowsAffected:", ret.RowsAffected)
 }
