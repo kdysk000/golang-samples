@@ -18,7 +18,7 @@ func GormSample016() {
 		Name: RandomStr(7),
 		Age:  RandomInt(2),
 		Job:  Job{
-			Name: "Doctor",
+			Name: "Teacher",
 		},
 	})
 	if ret.Error != nil {

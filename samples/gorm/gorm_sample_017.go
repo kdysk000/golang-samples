@@ -7,6 +7,9 @@ import (
 
 /*
 	HasOne(1対1)の関連を持つテーブルのレコードを取得する(Preload)
+
+	Preload は、SELECTを複数回実行されるので、
+	単一クエリで eager loading する Joins を使うほう効率がいい？
 */
 func GormSample017() {
 	fmt.Println("gorm_sample_017")
