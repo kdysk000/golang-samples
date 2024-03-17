@@ -6,17 +6,18 @@ import (
 )
 
 /*
-	単一クエリでHasOne(1対1)の関連を持つテーブルのレコードを取得する(Joins)
+	HasOne(1対1)の関連先のテーブルを検索条件にしてレコードを取得する(InnerJoins)
 */
-func GormSample024() {
-	fmt.Println("gorm_sample_024")
+func GormSample029() {
+	fmt.Println("gorm_sample_029")
 
 	db := DbInit()
 	AutoMigrate(tables002...)
 
 	records := []Worker{}
 
-	ret := db.Joins("Job").Find(&records)
+	//Job.Name が Doctor の Workerレコードを全て取得
+	ret := db.InnerJoins("Job", db.Where(&Job{Name: "Doctor"})).Find(&records)
 	if ret.Error != nil {
 		log.Fatal(ret.Error)
 	}

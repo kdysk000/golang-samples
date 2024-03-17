@@ -6,7 +6,7 @@ import (
 )
 
 /*
-	取得した結果から重複レコードを1つにまとめる(Distinct)
+	特定のカラムを指定して、重複しないレコードのみ取得する(Distinct)
 */
 func GormSample023() {
 	fmt.Println("gorm_sample_023")

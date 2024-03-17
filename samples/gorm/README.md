@@ -24,8 +24,14 @@ Go言語のORMライブラリ
 20. [取得したレコードの並び替え(Order)](./gorm_sample_020.go)
 21. [ページネーションでのレコード取得(Limit、Offset)](./gorm_sample_021.go)
 22. [グループ化(Group、Having)](./gorm_sample_022.go)
-23. [取得した結果から重複レコードを1つにまとめる(Distinct)](./gorm_sample_023.go)
-24. [単一クエリで関連データを eager loading する(Joins)](./gorm_sample_024.go)
+23. [特定のカラムを指定して、重複しないレコードのみ取得する(Distinct)](./gorm_sample_023.go)
+24. [単一クエリでHasOne(1対1)の関連を持つテーブルのレコードを取得する(Joins)](./gorm_sample_024.go)
 25. [レコードの特定カラムだけを別モデルに格納する(Scan)](./gorm_sample_025.go)
 26. [レコードの単一カラムを更新する(Update)](./gorm_sample_026.go)
 27. [レコードの複数カラムを更新する(Updates)](./gorm_sample_027.go)
+28. [HasOne(1対1)の関連を持つテーブルのレコードを条件を指定して取得する](./gorm_sample_028.go)
+29. [HasOne(1対1)の関連先のテーブルを検索条件にしてレコードを取得する(InnerJoins)](./gorm_sample_029.go)
+30. [HasMany(1対多)の関連を持つテーブルの作成](./gorm_sample_030.go)
+31. [HasMany(1対多)の関連を持つテーブルのレコードを取得する(Preload)](./gorm_sample_030.go)
+
+
