@@ -32,6 +32,5 @@ Go言語のORMライブラリ
 28. [HasOne(1対1)の関連を持つテーブルのレコードを条件を指定して取得する](./gorm_sample_028.go)
 29. [HasOne(1対1)の関連先のテーブルを検索条件にしてレコードを取得する(InnerJoins)](./gorm_sample_029.go)
 30. [HasMany(1対多)の関連を持つテーブルの作成](./gorm_sample_030.go)
-31. [HasMany(1対多)の関連を持つテーブルのレコードを取得する(Preload)](./gorm_sample_030.go)
-
-
+31. [HasMany(1対多)の関連を持つテーブルのレコードを取得する(Preload)](./gorm_sample_031.go)
+32. [HasMany(1対多)の関連を持つテーブルのレコードを条件を指定して取得する](./gorm_sample_032.go)

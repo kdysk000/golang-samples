@@ -14,14 +14,11 @@ func GormSample024() {
 	db := DbInit()
 	AutoMigrate(tables002...)
 
-	records := []Worker{}
+	record := Worker{}
 
-	ret := db.Joins("Job").Find(&records)
+	ret := db.Joins("Job").First(&record)
 	if ret.Error != nil {
 		log.Fatal(ret.Error)
 	}
-	for _, worker := range records {
-		fmt.Println("ID;", worker.ID, "Name:", worker.Name, "Age:", worker.Age, "Job:", worker.Job.Name)
-	}
-	fmt.Println("RowsAffected:", ret.RowsAffected)
+	fmt.Println(record)
 }
