@@ -18,14 +18,24 @@ func GormSample030() {
 		Name: RandomStr(7),
 		Age:  RandomInt(2),
 		CreditCards:  []CreditCard{
-			{Number: RandomInt(10)},
-			{Number: RandomInt(10)},
+			{Bank: "Mitsui", Number: RandomInt(10)},
+			{Bank: "Ufj", Number: RandomInt(10)},
 		},
 	})
 	if ret.Error != nil {
 		log.Fatal(ret.Error)
 	}
-	//ret.RowsAffectedの中には、今回の結果のRow数(行数)が入る
-	fmt.Println("count:", ret.RowsAffected)
+
+	ret = db.Create(&Rich{
+		Name: RandomStr(7),
+		Age:  RandomInt(2),
+		CreditCards:  []CreditCard{
+			{Bank: "Ufj", Number: RandomInt(10)},
+			{Bank: "Mizuho", Number: RandomInt(10)},
+		},
+	})
+	if ret.Error != nil {
+		log.Fatal(ret.Error)
+	}
 }
 

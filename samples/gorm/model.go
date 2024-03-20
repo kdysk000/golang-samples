@@ -61,6 +61,7 @@ type Rich struct {
 // ここでは Rich + ID で RichID となる
 type CreditCard struct {
 	gorm.Model
+	Bank   string
 	Number int
 	RichID uint
 }

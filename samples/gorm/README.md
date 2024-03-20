@@ -38,3 +38,4 @@ Go言語のORMライブラリ
 34. [Polymorphismの関連を持つテーブルのレコードを取得する](./gorm_sample_034.go)
 35. [ManyToMany(多対多)の関連を持つテーブルの作成](./gorm_sample_035.go)
 36. [ManyToMany(多対多)の関連を持つテーブルのレコードを取得する](./gorm_sample_036.go)
+37. [HasMany(1対多)の関連先のテーブルを検索条件にしてレコードを取得する](./gorm_sample_037.go)
