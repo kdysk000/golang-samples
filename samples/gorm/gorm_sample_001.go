@@ -15,11 +15,11 @@ func GormSample001() {
 	AutoMigrate(tables001...)
 	
 	ret := db.Create(&User{
-        Name: RandomStr(7),
+		Name: RandomStr(7),
 		Age:  RandomInt(2),
 	})
 	if ret.Error != nil {
-			log.Fatal(ret.Error)
+		log.Fatal(ret.Error)
 	}
 	//ret.RowsAffectedの中には、今回の結果のRow数(行数)が入る
 	fmt.Println("count:", ret.RowsAffected)

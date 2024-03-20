@@ -27,7 +27,7 @@ func GormSample002() {
 	}
 	ret := db.Create(&records)
 	if ret.Error != nil {
-			log.Fatal(ret.Error)
+		log.Fatal(ret.Error)
 	}
 	//ret.RowsAffectedの中には、今回の結果のRow数(行数)が入る
 	fmt.Println("count:", ret.RowsAffected)
