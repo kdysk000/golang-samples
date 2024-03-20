@@ -6,7 +6,7 @@ import (
 )
 
 /*
-	HasMany(1対多)の関連を持つテーブルのレコードを取得する(Preload)
+	HasMany(1対多)の関連を持つテーブルのレコードを取得する
 
 	注：HasOneと違いHasManyはPreloadしかEager Load できない？ (Joinsを使うとエラーになる)
 */

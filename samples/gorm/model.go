@@ -16,6 +16,15 @@ var (
 		&Rich{},
 		&CreditCard{},
 	}
+	tables004 = []interface{}{
+		&Cat{},
+		&Dog{},
+		&Toy{},
+	}
+	tables005 = []interface{}{
+		&Speaker{},
+		&Language{},
+	}
 )
 
 type User struct {
@@ -54,4 +63,40 @@ type CreditCard struct {
 	gorm.Model
 	Number int
 	RichID uint
-  }
+}
+
+// Polymorphism Association
+// GORMは Has One と Has Many アソシエーションにおいて、polymorphism associationをサポートしている。
+// 所有する側のエンティティのテーブル名が polymorphic type のフィールドに保存され、
+// 主キーが polymorphic 用のフィールドに保存される。
+type Cat struct {
+	ID    int
+	Name  string
+	Toys  []Toy `gorm:"polymorphic:Owner;"`
+}
+type Dog struct {
+	ID   int
+	Name string
+	Toys []Toy `gorm:"polymorphic:Owner;"`
+}
+type Toy struct {
+	ID        int
+	Name      string
+	OwnerID   int     //ここに Cat.ID もしくは Dog.ID が入る
+	OwnerType string  //ここに cats もしくは dogs が入る
+}
+
+// Many To Many テーブル
+// Speaker は複数の言語を所有しかつ言語に属している
+// `speaker_languages` は結合テーブルで、GORMの AutoMigrate を使用して
+// Speaker テーブルを作成する場合、GORMは自動的に結合テーブルを作成する。
+type Speaker struct {
+	gorm.Model
+	Name       string
+	Languages  []Language `gorm:"many2many:speaker_languages;"`
+}
+type Language struct {
+	gorm.Model
+	Name       string
+	Speakers   []Speaker `gorm:"many2many:speaker_languages;"`
+}
