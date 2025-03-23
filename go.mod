@@ -1,9 +1,8 @@
 module go-samples
 
-go 1.20
+go 1.24
 
 require (
-	github.com/google/uuid v1.6.0
 	golang.org/x/exp v0.0.0-20231006140011-7918f672742d
 	golang.org/x/sync v0.5.0
 	gorm.io/driver/mysql v1.4.7
